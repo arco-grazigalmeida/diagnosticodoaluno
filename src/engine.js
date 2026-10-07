@@ -9,6 +9,8 @@
 
   const DEFAULTS = {
     DEFAULT_LESSON_MIN: 20,     // duração assumida quando a aula não tem duração cadastrada (sinalizada como estimativa)
+    BLOCK_MIN: 30,              // curso sem aulas cadastradas: vira blocos de 30 min sobre a carga estimada
+    BLOCKS_PER_STAGE: 4,        // blocos agrupados em etapas (marcos de progresso)
     MAX_SEQUENCE: 5,            // cursos na sequência principal; os demais vão para "depois"
     DETAIL_WEEKS: 4,            // semanas detalhadas no cronograma
     MAX_DAYS: 3 * 365,          // horizonte máximo de previsão
@@ -28,7 +30,8 @@
   const round5 = (x) => Math.round(x / 5) * 5;
 
   /* ---------- Catálogo ---------- */
-  function buildCatalog(rows, version, isDemo) {
+  function buildCatalog(rows, version, isDemo, opts) {
+    const o = Object.assign({}, DEFAULTS, opts || {});
     const courses = new Map();
     const warnings = [];
     for (const r of rows || []) {
@@ -43,6 +46,7 @@
           temas: split(r.temas), nivel: Math.min(4, Math.max(1, parseInt(r.nivel, 10) || 1)),
           prereqs: split(r.prerequisitos), objetivos: String(r.objetivos || '').trim(),
           link: safeUrl(r.link_curso), materiais: split(r.materiais), modMap: new Map(), order: courses.size,
+          tipo: String(r.tipo || 'curso').trim().toLowerCase() || 'curso', carga: num(r.carga_estimada_h), cargaFonte: String(r.carga_fonte || '').trim(),
         };
         courses.set(cid, c);
       }
@@ -57,12 +61,30 @@
         });
       }
     }
-    const list = [...courses.values()];
+    const all = [...courses.values()];
+    const resources = all.filter((c) => c.tipo === 'recurso');
+    resources.forEach((c) => courses.delete(c.id));
+    const list = all.filter((c) => c.tipo !== 'recurso');
     for (const c of list) {
       c.modulos = [...c.modMap.values()].sort((a, b) => a.ordem - b.ordem);
       c.modulos.forEach((m) => m.aulas.sort((a, b) => a.ordem - b.ordem));
       c.lessons = c.modulos.flatMap((m) => m.aulas);
       delete c.modMap;
+      // Sem aulas cadastradas, mas com carga estimada: planejamento por blocos (sinalizado como estimativa)
+      if (!c.lessons.length && c.carga > 0) {
+        const n = Math.ceil((c.carga * 60) / o.BLOCK_MIN);
+        c.blockMode = true;
+        c.modulos = [];
+        for (let i = 1; i <= n; i++) {
+          const k = Math.ceil(i / o.BLOCKS_PER_STAGE);
+          let m = c.modulos[k - 1];
+          if (!m) { m = { id: `${c.id}-E${k}`, titulo: `Etapa ${k}`, ordem: k, aulas: [] }; c.modulos.push(m); }
+          m.aulas.push({ id: `${c.id}-B${i}`, titulo: `Bloco ${i} de ${n}`, ordem: i, dur: o.BLOCK_MIN, estimated: true, block: true, link: '', curso: c.id, modulo: m.id, moduloTitulo: m.titulo });
+        }
+        c.lessons = c.modulos.flatMap((m) => m.aulas);
+        warnings.push(`Curso ${c.id}: sem aulas cadastradas; usando ${n} blocos de ${o.BLOCK_MIN} min sobre carga estimada de ${c.carga} h.`);
+        continue;
+      }
       const missing = c.prereqs.filter((p) => !courses.has(p));
       if (missing.length) warnings.push(`Curso ${c.id}: pré-requisito(s) não encontrado(s) no catálogo: ${missing.join(', ')}.`);
       c.prereqs = c.prereqs.filter((p) => courses.has(p) && p !== c.id);
@@ -73,7 +95,7 @@
     const themes = [];
     list.forEach((c) => c.temas.forEach((t) => { if (!themes.includes(t)) themes.push(t); }));
     const byId = Object.fromEntries(list.map((c) => [c.id, c]));
-    return { version: version || 'sem-versao', demo: !!isDemo, courses: list.filter((c) => c.lessons.length), byId, themes, warnings };
+    return { version: version || 'sem-versao', demo: !!isDemo, courses: list.filter((c) => c.lessons.length), byId, themes, warnings, resources, blockCourses: list.filter((c) => c.blockMode).length };
   }
 
   function safeUrl(u) {
@@ -185,6 +207,15 @@
     // Curso de apoio à organização (curto, sem pré-requisitos) entra logo após o ponto de partida
     const sup = order.find((id) => info.get(id).reasons.some((r) => r.k === 'apoio') && !(edges.get(id) || []).length);
     if (sup && order.indexOf(sup) > 1) { order.splice(order.indexOf(sup), 1); order.splice(1, 0, sup); }
+    // Curso introdutório (nível 1) que cairia DEPOIS de um curso mais completo dos mesmos temas é redundante:
+    // vai para "depois da sequência", salvo se o aluno o pediu ou já começou.
+    for (const id of order.slice()) {
+      const c = byId[id];
+      if (c.nivel !== 1 || inProgress(id) || id === a.curso_desejado) continue;
+      const pos = order.indexOf(id);
+      const covered = order.slice(0, pos).some((x) => byId[x].nivel > 1 && c.temas.every((t) => byId[x].temas.includes(t)));
+      if (covered) { order.splice(pos, 1); order.push(id); }
+    }
     const cyclic = ids.filter((id) => !order.includes(id));
     // Cursos em ciclo de pré-requisitos não são recomendados (erro de catálogo)
 
@@ -281,23 +312,39 @@
     const weeklyUsed = perWeek * sessionMin;
 
     // Cadência de sessões de revisão (última sessão da semana)
-    const every = perWeek >= 2 ? { leve: 1, equilibrado: 2, intensivo: 4 }[a.ritmo] || 2 : { leve: 3, equilibrado: 4, intensivo: 6 }[a.ritmo] || 4;
+    const every = perWeek >= 3 ? { leve: 1, equilibrado: 2, intensivo: 4 }[a.ritmo] || 2
+      : perWeek === 2 ? { leve: 2, equilibrado: 3, intensivo: 4 }[a.ritmo] || 3
+        : { leve: 3, equilibrado: 4, intensivo: 6 }[a.ritmo] || 4;
 
     // Fila de aulas por curso
     const seq = rec.sequence.map((s) => s.course).concat(rec.later);
     const state = new Map();
     for (const s of seq) {
       let lessons = s.lessons.slice();
+      if (s.blockMode) {
+        // Blocos do tamanho da parte de aula da sessão: um bloco por sessão, sem partes
+        const total = s.lessons.reduce((t, l) => t + l.dur, 0);
+        const n = Math.max(1, Math.ceil(total / contentMin));
+        lessons = [];
+        for (let i = 1; i <= n; i++) {
+          // Etapas de BLOCKS_PER_STAGE sessões, para o aluno ter marcos curtos
+          const stages = Math.ceil(n / o.BLOCKS_PER_STAGE);
+          const k = Math.ceil(i / o.BLOCKS_PER_STAGE);
+          const m = s.modulos[Math.min(k, s.modulos.length) - 1];
+          lessons.push({ id: `${s.id}-B${i}`, titulo: `Bloco ${i} de ${n}`, dur: i < n ? contentMin : total - contentMin * (n - 1), estimated: true, block: true, link: '', curso: s.id, modulo: m.id, moduloTitulo: `Etapa ${k}`, stage: k, stages, first: i === 1, last: i === n });
+        }
+        lessons.forEach((l, i) => { l.stageEnd = !lessons[i + 1] || lessons[i + 1].stage !== l.stage; });
+      }
       const pct = rec.sequence.find((x) => x.id === s.id)?.pct || 0;
       let skipped = 0;
       if (pct > 0) { skipped = Math.floor((lessons.length * pct) / 100); lessons = lessons.slice(skipped); }
       state.set(s.id, {
         course: s, skipped,
-        queue: lessons.map((l) => ({ l, remaining: l.dur || o.DEFAULT_LESSON_MIN, total: l.dur || o.DEFAULT_LESSON_MIN, part: 0, estimated: l.dur == null })),
+        queue: lessons.map((l) => ({ l, remaining: l.dur || o.DEFAULT_LESSON_MIN, total: l.dur || o.DEFAULT_LESSON_MIN, part: 0, estimated: !!l.estimated || l.dur == null, block: !!l.block })),
         startDate: null, endDate: null, contentMin: lessons.reduce((t, l) => t + (l.dur || o.DEFAULT_LESSON_MIN), 0),
-        estimatedCount: lessons.filter((l) => l.dur == null).length,
+        estimatedCount: lessons.filter((l) => l.dur == null && !l.block).length, blockMode: !!s.blockMode,
       });
-      if (skipped) notes.push(`Em ${s.titulo}, consideramos as ${skipped} primeiras aulas como já assistidas, com base no progresso que você informou. Se não for o caso, comece pela aula que parou.`);
+      if (skipped) notes.push(s.blockMode ? `Em ${s.titulo}, descontamos cerca de ${pct}% da carga pelo progresso que você informou. Na área de membros, continue da aula em que parou.` : `Em ${s.titulo}, consideramos as ${skipped} primeiras aulas como já assistidas, com base no progresso que você informou. Se não for o caso, comece pela aula que parou.`);
     }
     const seqIds = seq.map((c) => c.id);
     const finished = (id) => !state.has(id) || state.get(id).queue.length === 0;
@@ -342,7 +389,10 @@
         lastReviewWeek = week;
         sess.type = 'revisao';
         const seen = lessonsThisWeek[week];
-        sess.items.push({ review: true, courseId: seen[0].curso, course: state.get(seen[0].curso).course.titulo, text: `Revisão da semana: ${seen.slice(0, 3).map((l) => l.titulo).join('; ')}${seen.length > 3 ? '…' : ''}`, min: sessionMin });
+        const reviewText = seen[0].block
+          ? `Revisão da semana: aulas estudadas em ${state.get(seen[0].curso).course.titulo}`
+          : `Revisão da semana: ${seen.slice(0, 3).map((l) => l.titulo).join('; ')}${seen.length > 3 ? '…' : ''}`;
+        sess.items.push({ review: true, courseId: seen[0].curso, course: state.get(seen[0].curso).course.titulo, text: reviewText, min: sessionMin });
         sess.minutes = sessionMin;
         sess.comp = reviewActivity(prefs, state.get(seen[0].curso).course);
         sess.goal = 'Consolidar o que foi estudado na semana antes de avançar';
@@ -367,7 +417,7 @@
           const multipart = q.part > 1 || !finishedLesson;
           sess.items.push({
             courseId: cid, course: st.course.titulo, moduleId: q.l.modulo, module: q.l.moduloTitulo, lessonId: q.l.id, lesson: q.l.titulo,
-            part: multipart ? q.part : 0, continuation: q.part > 1, lastPart: finishedLesson, min: take, estimated: q.estimated, link: q.l.link || st.course.link || '',
+            part: multipart ? q.part : 0, continuation: q.part > 1, lastPart: finishedLesson, min: take, estimated: q.estimated, block: q.block, blockInfo: q.block ? { stage: q.l.stage, stages: q.l.stages, stageEnd: q.l.stageEnd, first: q.l.first, last: q.l.last } : null, link: q.l.link || st.course.link || '',
           });
           if (finishedLesson) {
             st.queue.shift();
@@ -392,7 +442,7 @@
     // Previsões
     const forecast = seqIds.map((id) => {
       const st = state.get(id);
-      return { id, titulo: st.course.titulo, start: st.startDate, end: st.endDate, contentMin: st.contentMin, estimatedCount: st.estimatedCount, later: !rec.sequence.some((s) => s.id === id) };
+      return { id, titulo: st.course.titulo, start: st.startDate, end: st.endDate, contentMin: st.contentMin, estimatedCount: st.estimatedCount, blockMode: st.blockMode, later: !rec.sequence.some((s) => s.id === id) };
     });
 
     // Verificação de prazo da primeira etapa (curso inicial)
@@ -418,6 +468,11 @@
     for (const s of sessions) for (const it of s.items) {
       if (it.review || !it.lastPart) continue;
       const st = state.get(it.courseId);
+      if (it.block) {
+        const b = it.blockInfo;
+        if (b.stageEnd) milestones.push({ week: s.week, date: s.date, text: b.last ? `Concluir ${st.course.titulo}` : `Concluir a etapa ${b.stage} de ${b.stages} de ${st.course.titulo}` });
+        continue;
+      }
       const mod = st.course.modulos.find((m) => m.id === it.moduleId);
       if (mod && mod.aulas[mod.aulas.length - 1].id === it.lessonId && !seenMods.has(mod.id)) {
         seenMods.add(mod.id);
@@ -461,6 +516,13 @@
     const first = items[0];
     const st = state.get(first.courseId);
     const c = st.course;
+    if (first.block) {
+      const b = first.blockInfo;
+      if (b.first) return `Iniciar o curso ${c.titulo}`;
+      const end = items.find((it) => it.block && it.blockInfo.stageEnd);
+      if (end) return end.blockInfo.last ? `Concluir ${c.titulo}` : `Concluir a etapa ${end.blockInfo.stage} de ${end.blockInfo.stages}`;
+      return `Avançar em ${c.titulo}`;
+    }
     if (c.lessons[0] && c.lessons[0].id === first.lessonId && first.part <= 1 && !first.continuation) return `Iniciar o curso ${c.titulo}`;
     const endMod = items.find((it) => it.lastPart && (() => { const m = c.modulos.find((mm) => mm.id === it.moduleId); return m && m.aulas[m.aulas.length - 1].id === it.lessonId; })());
     if (endMod) return `Concluir o módulo “${endMod.module}”`;

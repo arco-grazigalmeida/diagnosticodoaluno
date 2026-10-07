@@ -9,6 +9,8 @@
     REQUEST_TIMEOUT_MS: 25000,
     STORAGE_KEY: 'cv-diagnostico-v1',
     PRIVACY_CONTACT: '[PROVISÓRIO] canal de contato da equipe a definir',
+    // Área de membros do Combo Vitalício (usada enquanto os cursos não têm link próprio no catálogo)
+    MEMBER_AREA_URL: 'https://hotmart.com/pt-BR/club/combo-vitalicio/products/4636748',
   };
   const E = window.Engine;
 
@@ -160,8 +162,9 @@
   /* ---------- catálogo ---------- */
   async function loadCatalog() {
     if (!CONFIG.ENDPOINT) {
-      const rows = JSON.parse(document.getElementById('demo-catalog').textContent);
-      catalog = E.buildCatalog(rows, 'demo-2026-10', true);
+      const el = document.getElementById('catalog-data');
+      catalog = E.buildCatalog(JSON.parse(el.textContent), el.dataset.version, false);
+      catalog.offline = true; // catálogo embutido na página: nada é enviado para a planilha
       return;
     }
     const ctrl = new AbortController();
@@ -180,6 +183,9 @@
     if (catalog && catalog.demo) {
       bannerEl.append(h('div', { class: 'banner no-print', role: 'note' },
         h('span', null, h('strong', null, 'Demonstração. '), 'Os cursos, aulas e durações desta página são fictícios. Nenhuma resposta é enviada ou salva fora do seu navegador.')));
+    } else if (catalog && catalog.offline) {
+      bannerEl.append(h('div', { class: 'banner no-print', role: 'note' },
+        h('span', null, h('strong', null, 'Versão em validação. '), 'Os cursos são os do Combo Vitalício, mas a ordem e as durações ainda estão sendo validadas pela equipe. Suas respostas ainda não são salvas.')));
     }
   }
 
@@ -690,7 +696,9 @@
       sc.descricao ? h('p', { class: 'muted' }, sc.descricao) : null,
       h('p', null, justificationNodes(rec)),
       rec.start.pct ? h('p', { class: 'small' }, 'Você já começou este curso. Retome pela aula indicada no cronograma ou pela aula em que parou.') : null,
-      sc.link ? h('div', null, h('a', { class: 'btn', href: sc.link, target: '_blank', rel: 'noopener' }, 'Acessar o curso')) : h('p', { class: 'small muted' }, 'O link oficial deste curso ainda não foi cadastrado no catálogo.'));
+      sc.link ? h('div', null, h('a', { class: 'btn', href: sc.link, target: '_blank', rel: 'noopener' }, 'Acessar o curso'))
+        : CONFIG.MEMBER_AREA_URL ? h('div', { class: 'stack' }, h('div', null, h('a', { class: 'btn', href: CONFIG.MEMBER_AREA_URL, target: '_blank', rel: 'noopener' }, 'Abrir a área de membros')), h('p', { class: 'small muted' }, `Na área de membros, abra a trilha “${sc.titulo}”.`))
+          : h('p', { class: 'small muted' }, 'O link oficial deste curso ainda não foi cadastrado no catálogo.'));
 
     // Curso desejado fora do início
     let desiredNote = null;
@@ -710,7 +718,7 @@
       const pre = s.course.prereqs.map((p) => catalog.byId[p].titulo + ((prog[p] || {}).status === 'concluido' ? ' (já concluído)' : ''));
       seqList.append(h('li', null, h('span', { class: 'n' }, String(i + 1)), h('div', null,
         h('strong', null, s.course.titulo),
-        h('div', { class: 'meta' }, E.roleOf(s, i, catalog), ' · ', `${E.fmtMin(f.contentMin)} de aulas${f.estimatedCount ? ' (inclui estimativas)' : ''}`),
+        h('div', { class: 'meta' }, E.roleOf(s, i, catalog), ' · ', f.blockMode ? `carga estimada de ${E.fmtMin(f.contentMin)} (provisória)` : `${E.fmtMin(f.contentMin)} de aulas${f.estimatedCount ? ' (inclui estimativas)' : ''}`),
         pre.length ? h('div', { class: 'meta' }, `Pré-requisito: ${E.joinPt(pre)}`) : null,
         f.end ? h('div', { class: 'meta' }, `Previsão: ${fmtDateShort(f.start)} a ${fmtDate(f.end)}`) : null)));
     });
@@ -730,6 +738,7 @@
       h('p', { class: 'muted small' }, `Cada semana usa no máximo o tempo que você informou (${fmtHours(sched.weeklyMin / 60)}). Aulas longas aparecem divididas em partes.`),
       weekKeys.map((w) => weekTable(w, weeks[w], sched)));
     const notes = [];
+    if (sched.forecast.some((f) => f.blockMode)) notes.push('As aulas e durações dos cursos ainda estão sendo cadastradas. Por isso o cronograma usa blocos de estudo de 30 minutos sobre uma carga horária estimada e provisória. Em cada bloco, siga a ordem das aulas do curso na área de membros, de onde parou. As datas de conclusão são estimativas.');
     if (sched.estimatedLessons) notes.push(`${sched.estimatedLessons} aula(s) ainda não têm duração cadastrada no catálogo. Para elas usamos uma estimativa de ${sched.defaultLessonMin} minutos, marcada como “estimado”.`);
     notes.push(...sched.notes);
     if (sched.deadline && !sched.deadline.ok) notes.push(`Você gostaria de concluir a primeira etapa até ${fmtDate(sched.deadline.wanted)}. Com ${fmtHours(sched.deadline.haveHours)} por semana, a previsão realista é ${fmtDate(sched.deadline.forecast)}. Para chegar antes, seriam necessárias cerca de ${String(sched.deadline.needHours).replace('.', ',')} h por semana. Mantivemos o plano dentro do tempo que você tem.`);
@@ -773,7 +782,8 @@
           (() => { const ctx = `${it.course} · ${it.module}`; if (ctx === lastCtx) return null; lastCtx = ctx; return h('span', { class: 'course' }, ctx); })(),
           it.link ? h('a', { href: it.link, target: '_blank', rel: 'noopener' }, it.lesson) : it.lesson,
           it.part ? h('span', { class: 'tag cont' }, it.continuation ? `continuação, parte ${it.part}` : `parte ${it.part}`) : null,
-          it.estimated ? h('span', { class: 'tag' }, 'estimado') : null,
+          it.estimated && !it.block ? h('span', { class: 'tag' }, 'estimado') : null,
+          it.block && (!it.part || it.part === 1) ? h('span', { class: 'tag' }, 'bloco de estudo') : null,
           ` · ${E.fmtMin(it.min)}`));
       tbody.append(h('tr', { class: s.type === 'revisao' ? 'rev' : '' },
         h('td', { 'data-label': 'Semana', class: 'num' }, String(s.week)),

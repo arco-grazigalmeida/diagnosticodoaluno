@@ -38,7 +38,8 @@ const HEADERS = {
     "aula_id", "aula", "minutos", "duracao_estimada", "atividade_complementar", "objetivo_sessao", "link"],
   "Sugestões de atualização": ["diagnostico_id", "recebido_em", "nome", "email", "temas_futuros", "aprofundar", "formatos", "falta", "melhoria", "status_analise"],
   "Catálogo": ["curso_id", "curso_titulo", "curso_descricao", "temas", "nivel", "prerequisitos", "objetivos", "link_curso",
-    "modulo_id", "modulo_titulo", "modulo_ordem", "aula_id", "aula_titulo", "aula_ordem", "duracao_min", "link_aula", "materiais", "ativo"],
+    "modulo_id", "modulo_titulo", "modulo_ordem", "aula_id", "aula_titulo", "aula_ordem", "duracao_min", "link_aula", "materiais", "ativo",
+    "tipo", "carga_estimada_h", "carga_fonte"],
   "Configuração": ["chave", "valor", "descricao"]
 };
 // HEADERS:END

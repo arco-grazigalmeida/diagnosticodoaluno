@@ -3,10 +3,12 @@
 //      node src/build.js --fragment -> também gera o fragmento usado na prévia do Artifact
 const fs = require('fs'), path = require('path');
 const dir = __dirname, out = path.join(dir, '..');
-const rows = require('./demo-catalog').rows();
+const cat = require('./catalogo');
+const rows = cat.rows();
 const body = fs.readFileSync(path.join(dir, 'index.template.html'), 'utf8')
   .replace('/*STYLES*/', () => fs.readFileSync(path.join(dir, 'styles.css'), 'utf8')
     .replace('/*BANNER*/', 'data:image/jpeg;base64,' + fs.readFileSync(path.join(dir, 'assets', 'banner-combo-vitalicio.jpeg')).toString('base64')))
+  .replace('/*CATALOG_VERSION*/', cat.VERSION)
   .replace('/*DEMO_ROWS*/', () => JSON.stringify(rows).replace(/</g, '\\u003c'))
   .replace('/*ENGINE*/', () => fs.readFileSync(path.join(dir, 'engine.js'), 'utf8'))
   .replace('/*APP*/', () => fs.readFileSync(path.join(dir, 'app.js'), 'utf8'));

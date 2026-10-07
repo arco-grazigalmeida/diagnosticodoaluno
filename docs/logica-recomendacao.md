@@ -37,10 +37,11 @@ Implementação: `src/engine.js` (funções puras, roda no navegador). Versão d
 4. **Herança**: o pré-requisito recebe no mínimo a pontuação do curso que ele destrava, mais 1.
 5. **Ordenação topológica**: o pré-requisito sempre vem antes. Os empates são resolvidos, nesta ordem, por pontuação, tema de maior prioridade, nível mais baixo e ordem no catálogo.
 6. O curso de apoio à organização, quando entra, fica em 2º lugar porque é curto e ajuda a manter a constância.
+   - Curso introdutório (nível 1) que cairia **depois** de um curso mais completo dos mesmos temas vai para "Depois dessa sequência", salvo se o aluno o pediu ou já começou. Ex.: quem já vai fazer a Formação Especialista em Preenchimento não recebe o Preenchimento Express em seguida.
 7. A sequência principal mostra no máximo 5 cursos. Os demais aparecem como "Depois dessa sequência".
 8. O **ponto de partida** é o 1º curso da sequência.
 
-**Justificativa**: o texto é montado a partir dos motivos registrados. Exemplo real do protótipo: *"Indicamos Prática Aplicada como primeiro passo porque é pré-requisito de Casos Complexos e trabalha 'Prática aplicada', o tema que você colocou como prioridade número 1."*
+**Justificativa**: o texto é montado a partir dos motivos registrados. Exemplo real do protótipo: *"Indicamos Formação Especialista em Preenchimento como primeiro passo porque é pré-requisito de Imersão Avançada em Preenchimento de Olheiras, Imersão Avançada em Preenchimento Labial, Imersão Avançada em Rinomodelação e Imersão Avançada em Full Face e trabalha 'Preenchimento facial', o tema que você colocou como prioridade número 1."*
 
 ## 3. Cronograma
 
@@ -54,6 +55,12 @@ Implementação: `src/engine.js` (funções puras, roda no navegador). Versão d
   - Aula maior que a sessão é dividida em partes, marcadas como continuação.
   - Uma aula nova não começa quando sobram menos de 10 min. Esse tempo vai para a atividade complementar.
 - **Aula sem duração no catálogo**: o plano usa 20 min e marca a aula como **"estimado"**.
+- **Curso sem aulas cadastradas (planejamento por blocos)**: enquanto a equipe não cadastra as aulas, o curso usa `carga_estimada_h`.
+  - A carga vira blocos do tamanho da parte de aula da sessão (ex.: sessão de 1h = bloco de 50 min + 10 min de atividade). Um bloco por sessão, nunca dividido.
+  - Blocos são agrupados em etapas de 4 sessões, que viram marcos curtos ("Concluir a etapa 1 de 4").
+  - O aluno vê a tag "bloco de estudo", a carga marcada como "(provisória)" e o botão "Abrir a área de membros" com o nome da trilha, já que não há link por aula.
+  - Progresso informado desconta a mesma porcentagem da carga.
+  - Ao cadastrar as aulas de um curso, ele sai do modo bloco automaticamente.
 - **Garantia**: o motor interrompe o cálculo com erro se alguma semana passar do tempo informado.
 - **Atividade complementar**: só cita material que existe na coluna `materiais` do curso. Sem material cadastrado, sugere atividades de estudo genéricas, como anotar ou resumir. O motor não inventa recurso.
 - **Prazo**: compara a conclusão prevista do curso inicial com o prazo desejado. Se não couber, mostra a data realista e quantas horas por semana seriam necessárias, sem mudar o plano.
@@ -61,9 +68,11 @@ Implementação: `src/engine.js` (funções puras, roda no navegador). Versão d
 
 ## 4. Parâmetros ajustáveis (`engine.js` › `DEFAULTS`)
 
-`DEFAULT_LESSON_MIN` (20), `MAX_SEQUENCE` (5), `DETAIL_WEEKS` (4), `SUPPORT_THEME_PATTERN` (/organiza/ — tema do curso de apoio).
+`DEFAULT_LESSON_MIN` (20), `BLOCK_MIN` (30, só para montar as etapas do catálogo), `BLOCKS_PER_STAGE` (4), `MAX_SEQUENCE` (5), `DETAIL_WEEKS` (4), `SUPPORT_THEME_PATTERN` (/organiza/ — tema do curso de apoio).
 
 ## 5. Limitações conhecidas
+
+- **Cargas provisórias:** enquanto `carga_fonte` for "provisória", previsões de término e prazos são estimativas. O aluno é avisado no topo da página e em cada curso.
 
 - **Progresso informado em faixa:** "consideramos as N primeiras aulas como vistas" é uma aproximação, e o aluno é avisado disso. Resolver de verdade exige integração com a plataforma de cursos.
 - **Nível é autoavaliação:** não há questões objetivas aprovadas pela equipe. Quando houver, elas entram como uma etapa opcional.

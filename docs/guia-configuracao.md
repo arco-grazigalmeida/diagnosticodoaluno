@@ -6,7 +6,7 @@ Tempo estimado: 20 a 30 minutos. Quem faz: alguém da equipe com conta Google da
 1. No Google Drive: **Novo › Upload de arquivo** › `planilha/modelo-diagnostico-combo-vitalicio.xlsx`.
 2. Abra e use **Arquivo › Salvar como Planilhas Google**. Apague o .xlsx enviado.
 3. **Compartilhar**: só a equipe autorizada, como *Editor* ou *Leitor*. Nunca "Qualquer pessoa com o link". A planilha contém nome e e-mail dos alunos.
-4. Na aba **Catálogo**, troque as linhas fictícias pelo catálogo oficial (uma linha por aula). Atualize `versao_catalogo` na aba **Configuração**.
+4. A aba **Catálogo** já traz as 20 trilhas reais, sem aulas. Complete com módulos e aulas (uma linha por aula, ver `catalogo-proposta.md`) e atualize `versao_catalogo` na aba **Configuração**.
 
 ## 2. Instalar o backend
 1. Na planilha: **Extensões › Apps Script**.
@@ -26,7 +26,7 @@ Tempo estimado: 20 a 30 minutos. Quem faz: alguém da equipe com conta Google da
 3. Gere a página: `node src/build.js`. O resultado é `pagina/index.html`, um arquivo único sem dependências.
 4. Hospede o `index.html` em qualquer hospedagem estática: Hostinger, Netlify, GitHub Pages ou a área de membros, se ela aceitar HTML.
 
-Com `ENDPOINT` vazio, a página roda em **modo demonstração**: usa o catálogo fictício e não envia nada.
+Com `ENDPOINT` vazio, a página roda em **modo demonstração**: usa o catálogo embutido na página (`src/catalogo.js`) e não envia nada.
 
 ## 4. Testar antes de divulgar
 - [ ] Abra a página e confirme que os cursos oficiais aparecem na etapa 2. Ela lê o catálogo da planilha.
