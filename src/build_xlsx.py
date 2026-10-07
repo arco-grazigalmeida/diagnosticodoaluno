@@ -16,7 +16,7 @@ for line in [
     [''],
     ['Abas preenchidas automaticamente pelo diagnóstico (não editar à mão): Diagnósticos, Planos de estudo, Cronograma, Sugestões de atualização.'],
     ['Abas mantidas pela equipe: Catálogo (uma linha por aula) e Configuração (versão do catálogo).'],
-    ['ATENÇÃO: o catálogo traz as 20 trilhas reais da área de membros, mas SEM módulos, aulas, durações e links. Temas, nível, pré-requisitos e carga_estimada_h são uma PROPOSTA a validar.'],
+    ['ATENÇÃO: módulos e aulas vêm do documento da equipe (07/10/2026), mas SEM duração e link. Temas, nível e pré-requisitos são uma PROPOSTA a validar. Preencha duracao_min e link_aula.'],
     ['Enquanto um curso não tiver aulas, o plano usa blocos de estudo sobre carga_estimada_h. Ao cadastrar as aulas: uma linha por aula, repetindo os dados do curso.'],
     ['tipo: "curso" entra no plano; "recurso" (ebook, aulas ao vivo, bônus, suporte) não entra no cronograma.'],
     ['Catálogo: separe vários temas ou pré-requisitos com ponto e vírgula. Nível: 1 Iniciante, 2 Básico, 3 Intermediário, 4 Avançado.'],

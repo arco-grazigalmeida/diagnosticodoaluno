@@ -1,0 +1,1558 @@
+{
+ "fonte": "Google Doc \"Combo_Vitalicio_Modulos_e_Aulas_COMPLETO\" (07/10/2026)",
+ "cursos": {
+  "FEP": [
+   {
+    "titulo": "Módulo 0 — Comece por aqui",
+    "aulas": [
+     "Instruções sobre o certificado",
+     "Nossas diretrizes",
+     "Informações importantes",
+     "Formulário de matrícula",
+     "Quem é João Pithon?",
+     "O que o preenchimento full face pode te proporcionar",
+     "O método 3TC",
+     "Precificação",
+     "Preencher com a cabeça",
+     "Fisiologia do envelhecimento e anatomia facial",
+     "Como saber se fiquei entre os melhores alunos"
+    ]
+   },
+   {
+    "titulo": "Módulo 1 — Reologia dos preenchedores",
+    "aulas": [
+     "Aula 1 - Introdução ao preenchimento e processo de industrialização do AH",
+     "Aula 2 - Princípios físicos e viscoelástico dos preenchedores",
+     "Aula 3 - Como escolher o melhor preenchedor",
+     "Aula 4 - Descrevendo a linha de preenchedores: Restylane",
+     "Aula 5 - Descrevendo a linha de preenchedores: Belotero e Yvoire",
+     "Aula 6 - Descrevendo a linha de preenchedores: Perfectha e Rennova",
+     "Aula 7 - Descrevendo a linha de preenchedores: Juvederm e Biogelis",
+     "Aula 8 - Descrevendo a linha de preenchedores: E.P.T.Q.",
+     "Aula 9 - Estudo visual E.P.T.Q. S500",
+     "Aula 10 - Estudo visual Yvoire Contour",
+     "Aula 11 - Estudo visual Biogelis Volume",
+     "Aula 12 - Estudo visual Restylane Lift",
+     "Aula 13 - Estudo visual Up Contour",
+     "Aula 14 - Estudo visual Juvederm Ultra XC",
+     "Aula 15 - Estudo visual Juvederm Voluma x Juverderm Volux",
+     "Aula 16 - Estudo visual de preenchedores intermediários",
+     "Aula 17 - Estudo visual Belotero Intense x Belotero Balance",
+     "Aula 18 - Estudo visual Rennova Ultra Deep x Rennova Lips",
+     "Aula 19 - Estudo visual Restylane Kysse",
+     "Aula 20 - Estudo visual Rennova Lift",
+     "Aula 21 - Estudo visual E.P.T.Q. S300",
+     "Aula 22 - Revisão com nota dos preenchedores e aplicação de hialuronidase",
+     "Aula 23 - Analisando reação dos preenchedores com hialuronidase",
+     "Aula Extra - Como preparar a hialuronidase",
+     "Os 5 tipos de preenchedores para o preenchimento full face",
+     "Produtos de baixo G'",
+     "Produtos de alto G'",
+     "Produtos de baixo swelling factor",
+     "Produto de alto tan delta",
+     "Produtos de alto G' com coesividade",
+     "Estudos Reológicos Parte 1",
+     "Estudos reológicos parte 2",
+     "Estudos reológicos parte 3",
+     "Industrialização do Ácido Hialurônico",
+     "Viscoelasticidade",
+     "Materiais Galderma",
+     "Discussões",
+     "Desafio #1 | Reologia"
+    ]
+   },
+   {
+    "titulo": "Módulo 2 — Intercorrências e complicações",
+    "aulas": [
+     "Aula 24 - Introdução ao diagnóstico e manejo de complicações com preenchedores",
+     "Aula 25 - Complicações agudas: não isquêmicas",
+     "Aula 26 - Complicações agudas: isquêmicas",
+     "Aula 27 - Complicações tardias: não isquêmicas",
+     "Aula 28 - Complicações tardias: isquêmicas",
+     "Aula 29 - ETIP: etiologia e fisiopatologia",
+     "Aula 30 - Hialuronidase no preenchimento",
+     "Aula 31 - Anafilaxia: como diagnosticar e usar",
+     "Conduta imediata diante de sangramento na artéria temporal",
+     "Ultrassom em Intercorrência no nariz",
+     "Desafio #2 | Intercorrências"
+    ]
+   },
+   {
+    "titulo": "Módulo 3 — Procedimento de treinamento: AHNR",
+    "aulas": [
+     "Aula 32 - Introdução ao módulo",
+     "Aula 33 - Bloqueios anestésicos - Parte 1",
+     "Aula 34 - Bloqueios anestésicos - Parte 2 (demonstração)",
+     "Aula 35 - Bloqueios anestésicos - Parte 3 (prática)",
+     "Aula 36 - Biorevitalização",
+     "Aula 37 - Introdução ao Hydra Lips",
+     "Aula 38 - Preparo Hydra Lips + caso clínico CC - Parte 1",
+     "Aula 39 - Preparo Hydra Lips + caso clínico CC - Parte 2",
+     "Aula 40 - Caso clínico Hydra Lips RC",
+     "Aula 41 - Caso clínico Hydra Lips VC",
+     "Aula 42 - Caso clínico Hydra Lips AF",
+     "Aula 43 - Caso clínico Hydra Lips NC",
+     "Aula 44 - O que é e de onde veio o Line Lifting",
+     "Aula 45 - Caso clínico de Line Lifting",
+     "Aula 46 - Supraorbitário e Line Lifting"
+    ]
+   },
+   {
+    "titulo": "Módulo 4 — Técnicas e raciocínio clínico para um preenchimento full face",
+    "aulas": [
+     "Aula 47 - Preparo da mesa",
+     "Aula 48 - Técnicas para avaliação - Parte 1",
+     "Aula 49 - Técnicas para avaliação - Parte 2",
+     "Aula 50 - Como fazer os pertuitos",
+     "Aula 51 - Como manusear a cânula",
+     "Aula 52 - Raciocínio clínico para o preenchimento de sulco nasolabial",
+     "Aula 53 - Caso clínico para o preenchimento de sulco nasolabial",
+     "Aula 54 - Raciocínio clínico para o preenchimento de malar e olheira",
+     "Aula 55 - Raciocínio clínico para o preenchimento de abertura zigomática",
+     "Aula 56 - Caso clínico para o preenchimento de arco zigomático, malar e olheira",
+     "Aula 57 - Raciocínio clínico para o preenchimento de mandíbula",
+     "Aula 58 - Raciocínio clínico para o preenchimento de mento",
+     "Aula 59 - Raciocínio clínico para o preenchimento de pré jowl",
+     "Aula 60 - Raciocínio clínico para o preenchimento de sulco labiomentoniano",
+     "Aula 61 - Caso clínico para o preenchimento de mento, pré jowl e sulco labiomentoniano",
+     "Aula 62 - Raciocínio clínico para o preenchimento labial",
+     "Aula 63 - Exame físico para o preenchimento labial",
+     "Aula 64 - Importância da anatomia no preenchimento labial",
+     "Aula 65 - Tipos de lábios e a sutil arte do preenchimento",
+     "Aula 66 - Anatomia vascular dos lábios",
+     "Aula 67 - Anatomia nervosa para bloqueios anestésicos",
+     "Aula 68 - 7 técnicas procedimentais com cânulas",
+     "Aula 69 - 8 técnicas procedimentais com agulhas",
+     "Aula 70 - Quando indicar e contra-indicar um preenchimento labial",
+     "Aula 71 - Dissertando sobre as técnicas de preenchimento labial",
+     "Aula 72 - Caso clínico para preenchimento labial NS",
+     "Aula 73 - Caso clínico para preenchimento labial VS",
+     "Aula 74 - Raciocínio clínico para rinomodelação",
+     "Aula 75 - Planejamento para rinomodelação",
+     "Aula 76 - Caso clínico para rinomodelação NS",
+     "Aula 77 - Caso clínico para rinomodelação TB",
+     "Aula 78 - Raciocínio clínico para o preenchimento de têmporas",
+     "Aula 79 - Caso clínico para o preenchimento de têmporas",
+     "Aula 80 - Raciocínio clínico para o preenchimento do terço superior",
+     "Aula 81 - Intraoral NB - Parte 1",
+     "Aula 82 - Olheiras e abertura zigomática NB - Parte 2",
+     "Aula 83 - Sulco nasolabial NB - Parte 3",
+     "Aula 84 - Labiomentoniano, pré jowl e mento NB - Parte 4",
+     "Aula 85 - Lábios e rinomodelação NB - Parte 5",
+     "Aula Extra - Caso clínico Preenchimento Labial e Rinomodelação Parte 1",
+     "Aula Extra - Caso clínico Preenchimento Labial e Rinomodelação Parte 2",
+     "Aula Extra - Caso clínico Preenchimento Labial e Rinomodelação Parte 3"
+    ]
+   },
+   {
+    "titulo": "Módulo 5 — Casos clínicos de preenchimento full face",
+    "aulas": [
+     "Aula 86 - Intraoral VC - Parte 1",
+     "Aula 87 - Têmporas VC - Parte 2",
+     "Aula 88 - Olheiras VC - Parte 3",
+     "Aula 89 - Lábios + botox VC - Parte 4",
+     "Aula 90 - Caso clínico full face MS com 2 ml",
+     "Aula 91 - Caso clínico full face PC com 3 ml",
+     "Aula 92 - Caso clínico full face RN com 3 ml + fios de pdo",
+     "Aula 93 - Caso clínico full face MH - Parte 1",
+     "Aula 94 - Caso clínico full face MH - Parte 2",
+     "Aula 95 - Caso clínico full face MH - Parte 3",
+     "Aula 96 - Caso clínico full face MR - Parte 1",
+     "Aula 97 - Caso clínico full face MR - Parte 2",
+     "Aula 98 - Caso clínico full face AC",
+     "Aula 99 - Caso clínico full face HC - Parte 1",
+     "Aula 100 - Caso clínico full face HC - Parte 2",
+     "Aula 101 - Caso clínico full face YC - Parte 1",
+     "Aula 102 - Caso clínico full face YC - Parte 2",
+     "Aula 103 - Caso clínico full face BC",
+     "Aula 104 - Caso clínico full face FC - Parte 1",
+     "Aula 105 - Caso clínico full face FC - Parte 2",
+     "Aula 106 - Caso clínico full face IC - Parte 1",
+     "Aula 107 - Caso clínico full face IC - Parte 2",
+     "Aula 108 - Reavaliação paciente JC com depoimento",
+     "Aula 109 - Relato paciente LC - A experiência da paciente após procedimento",
+     "Aula 110 - Relato paciente YM",
+     "Aula 111 - Caso clínico full face MZ - Parte 1",
+     "Aula 112 - Caso clínico full face MZ - Parte 2",
+     "Aula Extra - Aula 113 - Avaliação pós intercorrência nas olheiras",
+     "Aula Extra - Aula 114 - Preenchimento labial VL",
+     "Aula Extra - Aula 115 - Caso clínico de hialuronidase nas olheiras",
+     "Aula Extra - Aula 116 - Caso clínico de manutenção do full face",
+     "Aula Extra - Aula 117 - Caso clínico do ⅓ médio em paciente masculino",
+     "Aula Extra - Aula 118 - Caso clínico full face com 7 ml",
+     "Aula Extra - Aula 119 - Caso clínico full face com 4 ml em mulher madura",
+     "Aula Extra - Aula 120 - Caso clínico full face com 2,5 ml",
+     "Aula Extra - Aula 121 - Caso clínico full face em homem maduro",
+     "Aula Extra - Aula 122 - Caso clínico full face com 3 ml em mulher madura",
+     "Aula Extra - Aula 123 - Caso clínico masculino avançado com têmporas, lábios e rinomodelação",
+     "Aula Extra - Aula 124 - Caso clínico de manutenção e refinamento dos preenchedores",
+     "Aula Extra - Aula 125 - Retorno após hialuronidase + preenchedores",
+     "Aula Extra - Aula 126 - Caso clínico de preenchimento labial",
+     "Aula Extra - Aula extra 127 - Caso clínico de preenchimento labial",
+     "Aula Extra - Aula extra 128 - Caso clínico de preenchimento full face com 4 ml",
+     "Aula Extra - Aula extra 129 - Caso clínico de manutenção com 2 ml",
+     "Aula Extra - Aula extra 130 - Caso clínico de preenchimento full face com 5 ml",
+     "Aula Extra - Aula 131 - Caso clínico de preenchimento full face com 4 ml",
+     "Aula Extra - Aula 132 - Caso clínico de preenchimento full face com 5 ml",
+     "Aula Extra - Aula 133 - Caso clínico de preenchimento full face com 7 ml",
+     "Aula Extra - Aula 134 - Caso clínico de preenchimento full face com 3 ml",
+     "Aula Extra - Aula 135 - Caso clínico de hialuronidase nas olheiras",
+     "Aula Extra - Aula 136 - Manutenção do preenchimento full face",
+     "Aula Extra - Aula 137 - Manutenção do preenchimento full face",
+     "Aula Extra - Aula 138 - Preenchimento full face com menos de 5 ml",
+     "Aula Extra - Aula 139 - Preenchimento full face com menos de 5 ml",
+     "Aula Extra - Aula 140 - Preenchimento de lóbulo da orelha",
+     "Aula Extra - Aula 141 - Preenchimento labial com Rennova Lips",
+     "Aula Extra - Aula 142 - Preenchimento labial com Yvoire Contour",
+     "Caso clinico fullface com Restylane",
+     "Caso clínico com Neauvia Intense",
+     "Fullface com até 5ml em pele madura",
+     "Manutenção de preenchimento 6 meses após",
+     "Caso clinico de paciente com PMMA",
+     "Rinomodelação em paciente com rinoplastia",
+     "Manutenção de preenchimento fullface",
+     "Refinamento de fullface",
+     "Planejamento, anestesia e preenchimento de olheiras",
+     "Caso de fullface com marcas diversas - Parte 1",
+     "Caso de fullface com marcas diversas - Parte 2",
+     "Caso de fullface com marcas diversas - Parte 3",
+     "Paciente com PMMA - Parte 1",
+     "Paciente com PMMA - Parte 2",
+     "Hialuronidase, preenchimento e toxina botulinica - Parte 1",
+     "Hialuronidase, preenchimento e toxina botulinica - Parte 2",
+     "Hialuronidase, preenchimento e toxina botulinica - Parte 3",
+     "Caso clinico de fullface feminino",
+     "Caso clinico de fullface feminino com produtos variados",
+     "Refinamento de olheiras",
+     "Técnica de anestesia com SANEP",
+     "Caso clinico de refinamento - Parte 1",
+     "Caso clinico de refinamento - Parte 2",
+     "Caso clinico de refinamento - Parte 3",
+     "Caso clinico de preenchimento de olheiras",
+     "Preenchimento com bioestimulação com neauvia",
+     "Preencimento no terço inferior da face",
+     "Caso Fullface parte 1 - Planejamento",
+     "Caso Fullface parte 2 - Mandíbula",
+     "Caso Fullface parte 3 - Têmpora",
+     "Caso Fullface parte 4 - Lábios",
+     "Caso Fullface parte 5 - Rinomodelação",
+     "Caso Fullface parte 6 - Fronte e Supercílio"
+    ]
+   },
+   {
+    "titulo": "Módulo 6 — Crie sua própria técnica",
+    "aulas": [
+     "Aula 113 - Introdução ao módulo",
+     "Aula 114 - Ciência é o único caminho",
+     "Aula 115 - Técnicas de injeção com agulhas e cânulas",
+     "Aula 116 - Como eu trabalho a naturalidade nos meus pacientes",
+     "Aula 117 - Encantamento",
+     "Aula 118 - Raciocínio clínico para um tratamento individualizado",
+     "Aula 119 - Revisão de anatomia full face",
+     "Aula 120 - Como escolher o material e dispositivo para cada região",
+     "Aula 121 - Como mesclar as técnicas",
+     "Aula 122 - Como criar a sua própria técnica de preenchimento",
+     "Aula Extra - Caso clínico de preenchimento full face MO - Parte 1",
+     "Aula Extra - Caso clínico de preenchimento full face MO - Parte 2",
+     "Aula Extra - Caso clínico de preenchimento full face MO - Parte 3",
+     "Aula Extra - Caso clínico de preenchimento full face RA",
+     "Aula Extra - Caso clínico de preenchimento full face JA",
+     "Aula Extra - Caso clínico de preenchimento full face CW",
+     "Desafio #9 | Envio de caso"
+    ]
+   },
+   {
+    "titulo": "Módulo 7 — Atualizações",
+    "aulas": [
+     "Aula 158 - Solução anestésica de Klein para maior conforto do paciente",
+     "Aula 159 - Raciocínio clínico para o preenchimento de supercílio",
+     "Aula 160 - Técnica de preenchimento de supercílio",
+     "Caso clínico de preenchimento de órbita superior",
+     "Raciocínio clínico para o preenchimento de Crown Lifting",
+     "Atualizações sobre o preenchimento labial",
+     "Belotero Intense no preenchimento labial",
+     "Caso clínico de preenchimento full face",
+     "Caso clínico de rinomodelação",
+     "Técnicas de avaliação e planejamento",
+     "Caso clínico de preenchimento full face com menos de 5 ml",
+     "Reavaliação da toxina e preenchimento de olheiras e fios filler em pálpebra inferior",
+     "Caso clínico de preenchimento full face com 10 ml",
+     "Caso clínico de full face com têmporas, supercílio, zigomático, olheiras, sulco nasolabial, lábios, mandíbula, pré-jowl, labiomentoniano, mento e crown lifting",
+     "Caso clínico de preenchimento com Croma Volume",
+     "Revisão de anatomia da região temporal",
+     "Caso clínico da região temporal",
+     "Caso clínico de preenchimento de crown lifting",
+     "Revisão da anatomia da região orbital em paciente de 62 anos",
+     "Planejamento de 3 ml paciente feminina",
+     "Caso clínico de preenchimento labial com Neuramis Deep",
+     "Refinamento nas olheiras, sulco nasolabial e labiomentoniano",
+     "Raciocínio clínico para a região frontal",
+     "Raciocínio clínico para a região frontal - Anatomia",
+     "Raciocínio clínico para a região frontal - Intercorrências",
+     "Raciocínio clínico para a região da glabela",
+     "Raciocínio clínico para a região do supercílio",
+     "Raciocínio clínico para a região de têmporas - Anatomia",
+     "Raciocínio clínico para a região do couro cabeludo - Crown Lifting",
+     "Raciocínio clínico para a região do arco zigomático",
+     "Raciocínio clínico para a região infraorbitária",
+     "Raciocínio clínico para a região do nariz",
+     "Raciocínio clínico para a região do sulco nasolabial",
+     "Raciocínio clínico para a região da mandíbula",
+     "Raciocínio clínico para o lóbulo da orelha",
+     "Raciocínio clínico para a região do mento",
+     "Raciocínio clínico para a região da bochecha - ⅓ médio",
+     "Raciocínio clínico para a região dos lábios",
+     "Raciocínio clínico para a região do sulco labiomentoniano e pré jowl",
+     "Anestesia para rinomodelação",
+     "Técnica de anestesia intraoral com SANEP"
+    ]
+   }
+  ],
+  "BTX": [
+   {
+    "titulo": "Boas vindas, especialista!",
+    "aulas": [
+     "Eu sou o João, e você?",
+     "Sejam bem-vindos, especialistas!",
+     "Como funciona a plataforma?",
+     "Certificado"
+    ]
+   },
+   {
+    "titulo": "Profissional de harmonização completo",
+    "aulas": [
+     "1.0 - Procure ativamente seu sucesso",
+     "1.1 - O que é marketing para mim",
+     "1.2 - TRIPP: como ser um profissional de destaque",
+     "1.3 - O que eu faria se estivesse começando?",
+     "1.4 - Instagram",
+     "1.5 - Como organizar um botox day"
+    ]
+   },
+   {
+    "titulo": "Absolutamente tudo sobre Toxina Botulínica",
+    "aulas": [
+     "2.1 - História da toxina botulínica",
+     "2.2 - Propriedades bioquímicas e estrutura molecular",
+     "2.3 - Contração muscular fisiológica",
+     "2.4 - Mecanismo de ação da toxina",
+     "2.5 - Processo de industrialização",
+     "2.6 - Reconstituição",
+     "2.7 - Revisão",
+     "Reconstituição Letybo"
+    ]
+   },
+   {
+    "titulo": "Experiência do paciente: Encantamento nos mínimos detalhes",
+    "aulas": [
+     "3.1 - Clínica Pithon Napoli: unidade Pamplona",
+     "3.2 - Processo de agendamento",
+     "3.3 - Recepção dos pacientes",
+     "3.4 - Fluxo do paciente na clínica"
+    ]
+   },
+   {
+    "titulo": "O tratamento ideal: Raciocínio Clínico",
+    "aulas": [
+     "4.1 - Anatomia facial completa",
+     "4.2 - Toxina estética de terço superior",
+     "4.3 - Sorriso gengival",
+     "4.4 - Terço inferior",
+     "4.5 - Bruxismo",
+     "4.6 - Enxaqueca",
+     "4.7 - Blefaroespasmo",
+     "4.8 - Paralisias faciais",
+     "4.9 - Hiperidrose axilar",
+     "4.10 - Indicações e contra-indicações com toxina",
+     "4.11 - Intercorrências e manejos com toxina"
+    ]
+   },
+   {
+    "titulo": "Vamos à prática: Tudo o que você precisa saber",
+    "aulas": [
+     "5.1 - Precificação",
+     "5.2 - Orçamento",
+     "5.3 - Documentação fotográfica",
+     "5.4 - O poder do dinheiro - fazer caixa",
+     "5.5 - Empresa - cnpj - contabilidade",
+     "5.6 - Como contratar",
+     "5.7 - Como gerir e motivar a equipe",
+     "5.8 - Como fazer a documentação financeira",
+     "5.9 - Formas de pagamento - maquininha, $, boleto - devedores",
+     "5.10 - Gestão de estoque - como faço - fornecedores"
+    ]
+   },
+   {
+    "titulo": "Casos clínicos",
+    "aulas": [
+     "6.1 - Caso clínico de toxina estética GP",
+     "6.2 - Caso clínico de toxina estética SC",
+     "6.3 - Como finalizar a toxina e reconstituir uma nova",
+     "6.4 - Como fazer o planejamento da toxina botulínica",
+     "6.5 - Revisão de toxina botulínica masculina",
+     "6.6 - Caso clínico de toxina efeito nefertiti em paciente masculino",
+     "6.7 - Caso clínico de toxina estética em mulher madura",
+     "6.8 - Caso clínico de bloqueio supraorbitário e toxina estética masculina",
+     "6.9 - Caso clínico de toxina estética em mulher madura GM",
+     "6.10 - Toxina full face e nefertite em homem maduro",
+     "6.11 - Toxina estética (⅓ superior) e bruxismo em mulher jovem",
+     "6.12 - Toxina full face e enxaqueca em mulher madura",
+     "6.13 - Toxina para hiperidrose axilar em mulher madura",
+     "6.14 - Toxina full face e nefertite em mulher madura",
+     "6.15 - Toxina full face e nefertite em mulher madura",
+     "6.16.1 - Toxina full face e nefertite em mulher madura",
+     "6.16.2 - Toxina full face e nefertite em mulher madura",
+     "6.17 - Toxina full face em mulher madura",
+     "6.18 - Toxina full face em mulher jovem",
+     "6.19 - Toxina full face para paralisia de bell em homem maduro",
+     "6.20 - Toxina estética (⅓ superior) em homem jovem",
+     "6.21 - Toxina estética (⅓ superior) em homem jovem",
+     "6.22 - Toxina botulínica com anestesia",
+     "6.23 - Planejamento de Toxina botulínica paciente feminina",
+     "6.24 - Caso clínico de Toxina botulínica",
+     "6.25 - Caso clínico de toxina estética em paciente jovem",
+     "6.26 - Caso clínico pós fios fox eyes",
+     "6.27 - Toxina estética feminina",
+     "6.28 - Toxina estética feminina",
+     "6.29 - Toxina estética masculina região orbital",
+     "6.30 - Caso clínico de toxina estética",
+     "6.31 - Planejamento de toxina botulínica estética",
+     "6.32 - Planejamento de toxina com fios para pálpebras inferiores",
+     "6.33 - Musculatura e padrões para toxina estética",
+     "6.34 - Caso Clínico toxina masculina técnica em bloco",
+     "6.35 - Retoque de Botox",
+     "6.36 - Caso Clínico com Dysport (Galderma)",
+     "6.37 - Caso clínico de espasmos faciais",
+     "6.38 - Retorno de toxina para espásmos",
+     "6.39 - Caso clínico de preenchimento full face MO",
+     "6.40 - Reavaliação de Fios + Botox",
+     "6.41 - Caso clinica Mimica do terço inferior",
+     "6.42 - Reavaliação nefertiti fullface",
+     "6.43 - Botox de fronte com anestesia SANEP",
+     "6.44 - Caso Clínico com Letybo",
+     "6.45 - Segundo Caso Clínico com Letybo",
+     "6.46 - Caso clinico de assimetria nas sobrancelhas - Parte 1",
+     "6.47 - Caso clinico de assimetria nas sobrancelhas - Parte 2",
+     "6.48 - Caso clinico de assimetria nas sobrancelhas - Parte 3",
+     "6.49 - Terceiro caso clínico com Letybo",
+     "6.50 - Caso de botox masculino parte 1",
+     "6.51 - Caso de botox masculino parte 2",
+     "6.52 - Toxina facial e cervical",
+     "6.53 - Caso clinico fullface feminino - Parte 1",
+     "6.54 - Caso clinico fullface feminino - Parte 2",
+     "6.55 - Caso clinico compressão no nervo facial",
+     "6.56 - Toxina em paciente que quer abrir o máximo possível os olhos - parte 1",
+     "6.57 - Toxina em paciente que quer abrir o máximo possível os olhos - parte 2",
+     "6.58 - Reavaliação nefertiti",
+     "6.59 - Toxina em glabela",
+     "6.60 - Caso clinico letybo",
+     "6.61 - Caso clinico em paciente feminina",
+     "6.62 - Planejamento e reavaliação de Toxina Boltulínica - Letybo",
+     "6.63 - Toxina estética",
+     "6.64 - Planejamento toxina estética",
+     "6.65 - Toxina efeito Nefertite",
+     "6.66 - Reavaliação de toxina em paciente masculino",
+     "6.67 - Planejamento de Toxina em paciente masculino",
+     "6.68 - Toxina Botulínica em paciente masculino",
+     "6.69 - Toxina Botulínica em pele madura",
+     "6.70 - Reavaliação Toxina Botulínica em pele madura",
+     "6.71 - Planejamento de Toxina Boltulínica",
+     "6.72 - Planejameno Toxina Botulinica - paciente femina - arqueamento",
+     "6.73 - Reavaliação de Toxina em pele madura",
+     "6.74 - Planejamento Toxina Botulínica - região frontal",
+     "6.75 - Reavaliação Toxina Botulínica paciente feminina",
+     "6.76 - Planejamento e Aplicação Toxina Botulínica - paciente masculino",
+     "6.77 - Planejamento e Aplicação Toxina Botulínica - paciente pele madura",
+     "6.78 - Planejamento e Aplicação Toxina Botulínica Terço",
+     "6.79 - Técnica de Toxina Botulínica - primeira vez da paciente com procedimento",
+     "6.80 - Caso clínico toxina boltulínica estética para nefertite e bruxismo - Dysport",
+     "6.81 - Aplicação de Toxina Botulínica Dysport - Nefertite",
+     "6.82 - Planejamento Toxina Estética - Terço Superior e Masseter - paciente feminina",
+     "6.83 - Caso clínico - Reavaliação Clínica - Toxina Botulínica"
+    ]
+   },
+   {
+    "titulo": "Line Lifting: Tratamento de rugas estáticas em fronte",
+    "aulas": [
+     "7.1 - O que é e de onde veio o line lifting",
+     "7.2 - Casos clínicos",
+     "Line Lifting"
+    ]
+   },
+   {
+    "titulo": "Módulo extra com convidados",
+    "aulas": [
+     "8.1 - Fisiologia do envelhecimento por Dra. Lavinia Napoli",
+     "8.2 - Encantamento do paciente por Dra. Lavinia Napoli",
+     "8.3 - Captação de pacientes por Dra. Lavinia Napoli",
+     "8.4 - A influência do cabelo na estética facial por Neandro Ferreira"
+    ]
+   }
+  ],
+  "FIOS": [
+   {
+    "titulo": "Módulo 0 — Comece por aqui",
+    "aulas": [
+     "Nossas diretrizes",
+     "Instruções sobre o Certificado",
+     "Boas vindas + Informações importantes",
+     "Formulário de matrícula",
+     "O procedimento mais seguro da medicina estética"
+    ]
+   },
+   {
+    "titulo": "Módulo 1 — Como ter previsibilidade do resultado",
+    "aulas": [
+     "Como e quando indicar um fio de tração",
+     "Como e quando indicar um fio de pdo liso"
+    ]
+   },
+   {
+    "titulo": "Módulo 2 — Método do rejuvenescimento efetivo",
+    "aulas": [
+     "Fisiologia do envelhecimento"
+    ]
+   },
+   {
+    "titulo": "Módulo 3 — Mapa 18 meses do estímulo de colágeno",
+    "aulas": [
+     "Estrutura química da polidioxanona",
+     "Hidrólise da polidioxanona",
+     "Comparando a bioquímica dos diferentes tipos de fios",
+     "Início do processo de bioestimulação do pdo",
+     "Histologia e tipos de colágeno",
+     "Histologia do fio de pdo de 1 a 6 meses",
+     "Histologia do fio de pdo de 8 a 12 meses",
+     "Histologia do fio de pdo até 18 meses"
+    ]
+   },
+   {
+    "titulo": "Módulo 4 — Domínio de técnicas realmente satisfatórias",
+    "aulas": [
+     "Principais técnicas com fios lisos em face e pescoço",
+     "Caso clínico de fios lisos em pálpebra inferior",
+     "Caso clínico de fios lisos para smoker lines (código de barras)",
+     "Aula Bônus - Fios lisos com ultrassom guiado",
+     "Caso clínico de fios lisos em pescoço e papada",
+     "Caso clínico de fios lisos em pálpebra inferior",
+     "Caso clínico de 8 fios de tração moldado JP",
+     "Caso clínico de 8 fios de tração moldado LY",
+     "Caso clínico de 4 fios espiculados para fox eyes",
+     "Casos clínico de fios lisos em papada",
+     "Caso clínico de fios filler em pálpebra inferior em paciente masculino",
+     "Aula Extra - Caso clínico com 8 fios de tração para lifting do ⅓ médio",
+     "Aula Extra - Caso clínico com 4 fios de tração fox eyes",
+     "Aula Extra - Caso clínico com 8 fios de tração cruzados para lifting do ⅓ médio",
+     "Aula Extra - Especialista em Fios",
+     "Aula Extra - Fio de PDO pálpebra inferior",
+     "Aula Extra - Fios de PDO para melhorar cicatriz de acne",
+     "Aula Extra - Planejamento do Preenchimento Full Face associado de Fios de PDO",
+     "Aula Extra - Caso clínico de 4 fios de tração para ⅓ médio e 4 fios filler para pálpebras",
+     "Aula Extra - Caso clínico de fox eyes com 4 fios de tração e toxina botulínica",
+     "Caso Clínico de associação de fios filler, lifting de sobrancelhas e toxina botulínica",
+     "Caso clínico de fios de tração para ⅓ médio",
+     "Caso clínico de refinamento com fios de tração técnica reversa",
+     "Conduta imediata diante de sangramento na artéria temporal",
+     "Caso clinico double needle pescoco",
+     "Caso clínico full face RN com 3 ml + fios de pdo",
+     "Caso clinico Fox Eyes",
+     "Fio Filler em palpebra inferior",
+     "Caso clinico cicatriz de acne",
+     "Anestesia SANEP - Solução Anestésica de Pithon",
+     "Preparo, planejamento e aplicação de fios de tração",
+     "Fios de tração reversos",
+     "Fios filler em palpebra inferior",
+     "Fios lisos em comissura labial",
+     "Caso clinico de fios reversos",
+     "Planejamento, aplicação e ancoragem de fios de PDO",
+     "Planejamento e aplicação de fios de tração reversos"
+    ]
+   },
+   {
+    "titulo": "Módulo 5 — Como se aproveitar dos fios para ganhar mais na sua prática clínica",
+    "aulas": [
+     "Metodologia de vendas dos fios",
+     "Como precificar os fios"
+    ]
+   },
+   {
+    "titulo": "Masterclass em fios de tração",
+    "aulas": [
+     "Planejamento teórico",
+     "Caso clínico de fios de tração - lifting de ⅓ médio da face",
+     "Caso clínico de fios de tração - lifting de sobrancelha",
+     "Ativando as garras para o lifting"
+    ]
+   }
+  ],
+  "ATD": [
+   {
+    "titulo": "Módulo 0 - Comece por aqui",
+    "aulas": [
+     "Informações importantes + Formulário de matrícula",
+     "Metodologia ATSD"
+    ]
+   },
+   {
+    "titulo": "Módulo 1 - Gestão Financeira",
+    "aulas": [
+     "Aula 1 - Precificação",
+     "Aula 2 - Planejamento tributário",
+     "Aula 3 - Fechamento diário de caixa",
+     "Aula 4 - Controle de estoque",
+     "Aula 5 - Como definir metas de faturamento",
+     "Aula 6 - Fluxo de caixa"
+    ]
+   },
+   {
+    "titulo": "Módulo 2 - Marketing de relacionamento",
+    "aulas": [
+     "Aula 7 - Como estruturar um funil de vendas",
+     "Aula 8 - Como o CRM vai auxiliar o processo de abordar, atender e satisfazer seus pacientes",
+     "Aula 9 - Como trabalhar a recorrência dos procedimentos",
+     "Aula Extra - Considerações finais Dr. João Pithon e Rodrigo Grossi",
+     "Aula Extra - Diagnóstico gratuito"
+    ]
+   },
+   {
+    "titulo": "Módulo 3 - Como ter um time de alta conversão",
+    "aulas": [
+     "Aula 10 - Recrutamento e seleção",
+     "Aula 11 - Principais tópicos da gestão das pessoas"
+    ]
+   },
+   {
+    "titulo": "Módulo 4 - Estratégias para potencializar suas vendas",
+    "aulas": [
+     "Aula 12 - 5 passos em vendas",
+     "Aula 13 - Comunicação persuasiva",
+     "Aula 14 - Objeções e fechamento",
+     "Aula Extra - Considerações finais Dr. João Pithon e Priscilla Dantas",
+     "Aula Extra - Diagnóstico gratuito"
+    ]
+   },
+   {
+    "titulo": "Módulo 5 - Tudo o que você precisa saber para ter pacientes na medicina estética",
+    "aulas": [
+     "Aula 15 - O que estudar antes de se lançar no mercado de trabalho",
+     "Aula 16 - Como se posicionar como autoridade e crescer como profissional"
+    ]
+   },
+   {
+    "titulo": "Módulo 6 - Como converter o seu conhecimento em pacientes",
+    "aulas": [
+     "Aula 17 - Multiplique seu crescimento atendendo mais pacientes",
+     "Aula 18 - Multiplique pacientes com estratégia"
+    ]
+   }
+  ],
+  "CPX": [
+   {
+    "titulo": "Módulo 0 - Comece por aqui",
+    "aulas": [
+     "Informações importantes",
+     "Formulário de matrícula"
+    ]
+   },
+   {
+    "titulo": "Módulo 1 - Masterclass em Preenchimento",
+    "aulas": [
+     "Aula 01 - Os requisitos necessários de um injetor",
+     "Aula 02 - Como escolher o melhor produto para cada região",
+     "Aula 03 - O manejo de intercorrências ao vivo",
+     "Aula 04 - Como fazer full face com menos de 5 ml"
+    ]
+   },
+   {
+    "titulo": "Módulo 2 - Raciocínio clínico no preenchimento",
+    "aulas": [
+     "Aula 05 - Preparo da mesa",
+     "Aula 06 - Técnicas para avaliação - Parte 1",
+     "Aula 07 - Técnicas para avaliação - Parte 2",
+     "Aula 08 - Como fazer os pertuitos",
+     "Aula 09 - Como manusear a cânula",
+     "Aula 10 - Raciocínio clínico do preenchimento full face",
+     "Aula 11 - Arco zigomático: como preencher",
+     "Aula 12 - Sulco nasolabial: como preencher",
+     "Aula 13 - ⅓ inferior: como preencher",
+     "Aula 14 - Rinomodelação: como preencher",
+     "Aula 15 - Lábios: como preencher",
+     "Aula Extra - Caso clínico full face com 2,5 ml",
+     "Aula Extra - Caso clínico masculino avançado com têmporas, lábios e rinomodelação"
+    ]
+   },
+   {
+    "titulo": "Módulo de encerramento",
+    "aulas": [
+     "Recado exclusivo"
+    ]
+   }
+  ],
+  "CORP": [
+   {
+    "titulo": "Módulo 0 - Comece por aqui",
+    "aulas": [
+     "Nossas diretrizes",
+     "Instruções sobre o Certificado",
+     "Boas vindas + como se destacar nos procedimentos corporais",
+     "Como eu abordo os procedimentos corporais na minha prática clínica (parte 1)",
+     "Como eu abordo os procedimentos corporais na minha prática clínica (parte 2)",
+     "Avaliação e planejamento de procedimentos corporais",
+     "O cenário da medicina estética corporal hoje"
+    ]
+   },
+   {
+    "titulo": "Módulo 1 - Anatomia humana para procedimentos corporais",
+    "aulas": [
+     "Vascularização geral do corpo",
+     "Anatomia geral da região glútea",
+     "Anatomia dos ossos do quadril",
+     "Anatomia do subcutâneo do glúteo",
+     "Anatomia vascular da região glútea",
+     "Inervação do glúteo",
+     "Anatomia dos membros superiores",
+     "Revisão de anatomia da região da mama"
+    ]
+   },
+   {
+    "titulo": "Módulo 2 - Tipos de produtos e suas indicações em cada região do corpo",
+    "aulas": [
+     "Tipos de produtos e suas indicações para glúteos",
+     "Preparo do bioestimulador Elleva",
+     "Como escolher o melhor preenchedor para a região dos glúteos",
+     "Revisão de reologia do Body Shape"
+    ]
+   },
+   {
+    "titulo": "Módulo 3 - Técnicas procedimentais para cada região do corpo",
+    "aulas": [
+     "Avaliação para procedimentos corporais",
+     "Avaliação para procedimentos corporais",
+     "Avaliação para procedimentos corporais",
+     "Planejamento e raciocínio clínico",
+     "Técnicas procedimentais para a região glútea",
+     "Técnicas de procedimentos para a região interna dos braços",
+     "Técnicas procedimentais para a região de mama",
+     "Técnicas procedimentais para abdômen",
+     "Técnicas de esvaziadores de gordura para a região dos glúteos",
+     "Técnicas procedimentais para volumizadores e bioestimuladores em glúteos",
+     "Técnicas e escolha do produto para subcisão",
+     "Esvaziadores de gordura",
+     "Técnicas de bioestimulação de colágeno em mãos",
+     "Técnica de esvaziadores de gordura na região dos braços",
+     "Técnicas procedimentais para a região da coxa",
+     "Técnicas de esvaziadores de gordura para região abdominal"
+    ]
+   },
+   {
+    "titulo": "Módulo 4 - Complicações e manejo nos procedimentos corporais",
+    "aulas": [
+     "Complicações nos procedimentos corporais"
+    ]
+   },
+   {
+    "titulo": "Módulo 5 - Casos clínicos de procedimentos corporais",
+    "aulas": [
+     "Caso clínico de esvaziadores de gordura no abdômen",
+     "Caso clínico de esvaziadores de gordura em flanco posterior",
+     "Caso clínico de esvaziadores de gordura em região posterior do braço",
+     "Caso clínico de preenchimento de glúteos com body shape 36 ml (Parte 1)",
+     "Reavaliação pós procedimento (Parte 2)",
+     "Caso clínico de bioestimulador de colágeno com 2 Elleva em glúteo (Parte 1)",
+     "Caso clínico de preenchimento de glúteos com body shape 36 ml (Parte 2)",
+     "Caso clínico de esvaziadores de gordura no braço com a Dra. Gabriela Pithon",
+     "Caso clínico de bioestimulador de colágeno com hidroxiapatita de cálcio em glúteos",
+     "Caso clínico de esvaziadores de gordura em região submentual",
+     "Caso clínico de preenchimento de glúteos com body shape 36 ml",
+     "Caso clínico de bioestimulador de colágeno com hidroxiapatita de cálcio em mãos",
+     "Caso clínico de esvaziadores de gordura no braço",
+     "Caso clínico de esvaziadores de gordura no braço",
+     "Caso clínico de bioestimulador com dois Elleva em glúteos",
+     "Caso clínico de preenchimento Body Shape com 36 ml em mamas",
+     "Caso clínico de bioestimulador de colágeno com hidroxiapatita de cálcio em mãos",
+     "Caso clínico de bioestimulador de colágeno com 2 Rennova Diamond em abdômen",
+     "Caso clínico de bioestimulador de colágeno com Biocomplex (PLLA + CaOH) na parte interna do braço",
+     "Subcisão na região glútea",
+     "Bioestimulador de colágeno nos glúteos",
+     "Preenchimento e bioestimulador nos glúteos",
+     "Esvaziadores de gordura nos flancos posteriores",
+     "Bioestimulador nos glúteos",
+     "Preenchedores e subcisão nos glúteos",
+     "Bioestimulador de colágeno no pescoço",
+     "Caso clínico de preenchimento com bioestimulador em glúteos com pmma",
+     "Formulário de satisfação",
+     "Caso clinico preenchimento de cotovelo",
+     "Caso clinico dorço do pé",
+     "Caso clinico de degradação de gordura localizada no braço",
+     "Caso clinico de preenchimento em mãos"
+    ]
+   }
+  ],
+  "RINO": [
+   {
+    "titulo": "Comece por aqui",
+    "aulas": [
+     "Boas Vindas + Canal WhatsApp",
+     "Material de Apoio"
+    ]
+   },
+   {
+    "titulo": "Aquecimento Imersão",
+    "aulas": [
+     "Raciocínio clínico para rinomodelação",
+     "Planejamento para rinomodelação",
+     "Caso clínico para rinomodelação",
+     "Aula Bônus - Caso clínico full face masculino com preenchimento avançado",
+     "Te vejo dias 24 e 25 de Junho às 20h"
+    ]
+   },
+   {
+    "titulo": "Imersão Avançada em Rinomodelação",
+    "aulas": [
+     "Dia 1 - Técnicas de rinomodelação com anatomia profunda",
+     "Dia 2 - Protocolo de complicações da rinomodelação",
+     "[Live] Rinomodelação - Caso clínico 1",
+     "[Live] Rinomodelação - Caso clínico 2",
+     "[Live] Rinomodelação com agulha - Caso clínico 3",
+     "[Live] Rinomodelação - Caso clínico 4",
+     "[Live] Rinomodelação - Caso clínico 5",
+     "[Live] Rinomodelação - Caso clínico 6"
+    ]
+   }
+  ],
+  "OLH": [
+   {
+    "titulo": "Comece por aqui",
+    "aulas": [
+     "Boas Vindas + Canal WhatsApp"
+    ]
+   },
+   {
+    "titulo": "Aquecimento Imersão Avançada em Preenchimento de Olheiras",
+    "aulas": [
+     "Raciocínio clínico para o preenchimento de malar e olheira"
+    ]
+   },
+   {
+    "titulo": "Imersão Avançada em Preenchimento de Olheiras",
+    "aulas": [
+     "Intercorrências",
+     "Anatomia",
+     "Reologia",
+     "[Live] Preenchimento de olheiras - Caso clínico 1",
+     "[Live] Preenchimento de olheiras - Caso clínico 2",
+     "[Live] Preenchimento de olheiras - Caso clínico 3",
+     "[Live] Preenchimento de olheiras - Caso clínico 4",
+     "[Live] Preenchimento de olheiras - Caso clínico 5",
+     "[Live] Preenchimento de olheiras - Caso clínico 6",
+     "[Live] Preenchimento de olheiras - Caso clínico 7"
+    ]
+   }
+  ],
+  "COMP": [
+   {
+    "titulo": "Módulo 0 - Comece por aqui",
+    "aulas": [
+     "Boas Vindas + Informações Importantes",
+     "Formulário de matrícula",
+     "Mecanismos de segurança com as cânulas",
+     "Hialuronidase",
+     "⅓ inferior da face - Diagnóstico e manejo de complicações",
+     "⅓ médio da face - Complicações isquêmicas",
+     "⅓ superior da face - Complicações isquêmicas",
+     "Técnicas de avaliação",
+     "Técnicas de planejamento"
+    ]
+   },
+   {
+    "titulo": "Complicações isquêmicas agudas",
+    "aulas": [
+     "Introdução ao raciocínio clínico de complicações agudas isquêmicas",
+     "Revisão do raciocínio clínico das complicações agudas isquêmicas",
+     "Rinomodelação - Protocolo e manejo das complicações",
+     "Amaurose - Protocolo de manejo das complicações"
+    ]
+   },
+   {
+    "titulo": "Complicações não isquêmicas agudas",
+    "aulas": [
+     "Complicações agudas não isquêmicas - Parte 1",
+     "Complicações agudas não isquêmicas - Parte 2"
+    ]
+   },
+   {
+    "titulo": "Complicações não isquêmicas tardias",
+    "aulas": [
+     "Complicações não isquêmicas tardias"
+    ]
+   },
+   {
+    "titulo": "USG: Anatomia tridimensional e o uso nas complicações",
+    "aulas": [
+     "Como mapear a face com USG",
+     "Análise da região labial com ultrassom de alta definição",
+     "Anatomia do nariz com ultrassom de alta definição",
+     "Análise da temporal com ultrassom de alta definição",
+     "Avaliação radiológica do ⅓ inferior da face",
+     "Avaliação radiológica do ⅓ superior da face"
+    ]
+   },
+   {
+    "titulo": "Casos clínicos",
+    "aulas": [
+     "Caso clínico com a Dra. Gabriela - Nódulos Sculptra com infecção",
+     "Caso clínico com a Dra. Gabriela - Abscesso",
+     "Caso clínico com a Dra. Gabriela - Hematoma ou isquemia?",
+     "Caso clínico com a Dra. Gabriela - Nódulos com Elleva",
+     "Intercorrências com Elleva",
+     "Hialuronidase na rinomodelação",
+     "Complicação não isquêmica tardia - Preenchimento",
+     "Preparo da hialuronidase para evento não isquêmico tardio",
+     "Caso clínico de drenagem de abscesso na mandíbula",
+     "Tratamento de nódulos pós Elleva em face",
+     "Caso clínico de hialuronidase e refinamento",
+     "Caso clínico de hialuronidase nas olheiras",
+     "Hialuronidase em evento não isquêmico"
+    ]
+   }
+  ],
+  "LAB": [
+   {
+    "titulo": "Comece por aqui",
+    "aulas": [
+     "Boas Vindas + Canal WhatsApp"
+    ]
+   },
+   {
+    "titulo": "Aquecimento IPL",
+    "aulas": [
+     "Quando indicar e contra-indicar um preenchimento labial",
+     "Anatomia vascular dos lábios",
+     "Caso clínico de preenchimento labial"
+    ]
+   },
+   {
+    "titulo": "Imersão Avançada em Preenchimento Labial",
+    "aulas": [
+     "Anatomia",
+     "Diagnóstico",
+     "Paciente 1",
+     "Paciente 2",
+     "Paciente 3",
+     "Paciente 4",
+     "Paciente 5",
+     "Paciente 6",
+     "Paciente 7",
+     "Paciente 8",
+     "Paciente 9",
+     "Perguntas e Respostas",
+     "Revisão do que foi feito"
+    ]
+   }
+  ],
+  "FF": [
+   {
+    "titulo": "Comece por aqui",
+    "aulas": [
+     "Boas Vindas + Canal WhatsApp"
+    ]
+   },
+   {
+    "titulo": "[Aquecimento] Imersão Avançada em Full Face",
+    "aulas": [
+     "Raciocínio clínico para a região do supercílio",
+     "Técnica de preenchimento de supercílio",
+     "Caso clínico de preenchimento de órbita superior",
+     "Raciocínio clínico para a região do couro cabeludo - Crown Lifting",
+     "Raciocínio clínico para o lóbulo da orelha",
+     "Raciocínio clínico para a região da bochecha - ⅓ médio",
+     "Anatomia da região infraorbitária"
+    ]
+   },
+   {
+    "titulo": "Imersão Avançada em Full Face",
+    "aulas": [
+     "Aula 1 - Anatomia e Reologia no Preenchimento Full Face",
+     "Aula 2 - Técnicas e Intercorrências no Preenchimento Full Face"
+    ]
+   }
+  ],
+  "FF10": [
+   {
+    "titulo": "Comece por aqui",
+    "aulas": [
+     "Boas Vindas + Canal WhatsApp",
+     "Introdução ao racíocinio clínico do preenchimento full face",
+     "Dissecção em cadáver fresco Nasal: revisão de anatomia"
+    ]
+   },
+   {
+    "titulo": "[Aquecimento] Imersão Avançada em Full Face com mais de 10 ml",
+    "aulas": [
+     "Raciocínio clínico para a região da mandíbula",
+     "Raciocínio clínico para a região do mento",
+     "Raciocínio clínico para a região do couro cabeludo",
+     "SANEP - Solução Anestésica de Pithon",
+     "Raciocínio clínico aplicado às técnicas tridimensionais"
+    ]
+   },
+   {
+    "titulo": "Imersão Avançada em Full Face com mais de 10 ml",
+    "aulas": [
+     "Aula 1 - Anatomia e Reologia no Preenchimento Full Face",
+     "Aula 2 - Técnicas e Intercorrências no Preenchimento Full Face",
+     "Dia 1 Paciente 1",
+     "Dia 1 Paciente 2",
+     "Dia 1 Paciente 3",
+     "Dia 2 Paciente 1",
+     "Dia 2 Paciente 2"
+    ]
+   }
+  ],
+  "CAD": [
+   {
+    "titulo": "Anatomia em cadáveres",
+    "aulas": [
+     "Flap 1 região nasal",
+     "Flap 2 região nasal com demonstração com cânula 22g",
+     "Flap 3 Rinomodelação com foco no dorso e ramos etmoidais anteriores",
+     "Flap nasal bilateral dissecção de artérias",
+     "Descrição anatômica da técnica 3D olheiras",
+     "Flap infraorbitario com descrição de técnica em fossa com cânula e agulha",
+     "Descrição das cartilagens nasais e ligamentos",
+     "Vascularização 1/3 médio a. Angular e facial",
+     "Flap Inicial da Região Frontal e Técnicas de Aplicação de Toxina Botulínica",
+     "Segundo Flap da Região Frontal – Vascularização e Musculatura",
+     "Flap da Região da Glabela – Dissecção dos Músculos Corrugadores e Prócero",
+     "Flap Frontal com Dissecção da Artéria Supratroclear e Correlações Vasculares",
+     "Flap Frontal – Vascularização e Técnicas de Aplicação com Cânulas e Agulhas",
+     "Raciocínio Clínico Aplicado às Técnicas Tridimensionais",
+     "Flap do Terço Inferior da Face – Dissecção da Artéria Facial e Musculatura",
+     "Técnica de Aplicação de Fios de Tração Reversa na Região Temporal",
+     "Formação Especialista em Fios – Técnica Fox Eyes com Fio de Tração Reverso para Lifting de Sobrancelhas",
+     "Revisão da Anatomia das Artérias Temporais Superficiais e suas Ramificações",
+     "Técnica tridimensional de preenchimento de mento",
+     "Descrição da região perioral com vascularização",
+     "Técnica de preenchimento do sulco lábio mentoniano",
+     "Técnica tridimensional de preenchimento do sulco nasolabial",
+     "Técnica tridimensional de preenchimento de lábio em cadáver fresco e sua dissecção anatômica",
+     "Anatomia do nariz",
+     "Anatomia nasal parte 2",
+     "Região superciliar e frontal",
+     "Região frontal flap 1",
+     "Região frontal",
+     "Anatomia da região frontal com vascularização",
+     "Revisão de anatomia da região temporal superficial",
+     "Revisão anatômica global da face - Vascularização",
+     "Região mandibular e parotídea",
+     "Região mandibular parte 2",
+     "Revisão da Anatomia das Artérias Temporais Superficiais",
+     "Região temporal com técnica de aplicação",
+     "Revisão das camadas da região temporal",
+     "Técnica superficial de preenchimento de têmporas",
+     "Avaliando camadas",
+     "Continuação das camadas da têmpora",
+     "Anatomia da orelha",
+     "Rinomodelação: Agulha ou Cânula?",
+     "Anatomia da região nasal",
+     "Complexo nasoglabelar",
+     "Dissecção orgânica: Retirando a pele",
+     "Cadáver em dissecção orgânica",
+     "Remoção da pele do terço médio",
+     "Camadas da zona temporal",
+     "Região nasal",
+     "Riscos das regiões superorbitárias e da glabela",
+     "Técnica anestésica de Napoli",
+     "Revisão de anatomia global da face",
+     "Dissecando a artéria facial",
+     "Conexão da artéria carótica interna e externa na região ocular",
+     "Anaurose no preenchimento",
+     "Como reperfundir agulha ou cânula",
+     "Inervação sensitiva da face",
+     "Anatomia para toxina no terço inferior da face",
+     "Anatomia da região cervical",
+     "Dissecção da região cervical parte 2",
+     "Região cervical parte 3",
+     "Progressão da região cervical",
+     "Acompanhando a artéria facial da região cervical",
+     "Anatomia da arteria labial inferior pelo caminho reverso",
+     "Região mentoal",
+     "Dissecção das artérias labiais inferior e superior",
+     "Região Infraorbitária",
+     "Região de parótica e ducto parotídeo",
+     "As glândulas da face",
+     "Anatomia da língua",
+     "Anatomia dos coxins gordurosos orbitais profundos.",
+     "Anatomia Periorbital",
+     "Apresentação de cadáver importado dos Estados Unidos",
+     "Inicio na dissecção",
+     "Primeira camada do nariz",
+     "Região Perioral",
+     "Técnica de preenchimento nasal com cânula",
+     "Técnica de aplicação com seringa BD",
+     "Técnica de preenchimento labial com cânulas e agulhas",
+     "Abrindo a região infraorbitária",
+     "Acolchoamento da região dos olhos",
+     "Subcutâneo da região frontal",
+     "Região frontal parte 2",
+     "Região frontal parte 3",
+     "Região auriculotemporal",
+     "Camadas da região auriculotemporal",
+     "Camadas da região auriculotemporal parte 2",
+     "Camadas da região auriculotemporal parte 3",
+     "Região da pálpebra superior",
+     "Musculo da região nasal",
+     "Comissura labial",
+     "Região perioral",
+     "Região do masseter",
+     "Continuação região perioral",
+     "Aplicação para bruxismo",
+     "Preenchimento de mandíbula",
+     "Aplicação na região temporal",
+     "Aplicação da região nasal",
+     "Região mentoniana",
+     "Estrutura da musculatura do 1/3 médio"
+    ]
+   },
+   {
+    "titulo": "Laboratório de anatomia em cadáver fresco",
+    "aulas": [
+     "Laboratório de anatomia em cadáver fresco"
+    ]
+   }
+  ],
+  "ANAT": [
+   {
+    "titulo": "Comece por aqui",
+    "aulas": [
+     "Nossas diretrizes",
+     "Eu sou o João, e você?",
+     "Instruções sobre o certificado",
+     "Informações importantes"
+    ]
+   },
+   {
+    "titulo": "⅓ inferior - Vascularização: base da artéria facial",
+    "aulas": [
+     "Flap do Terço Inferior da Face – Dissecção da Artéria Facial e Musculatura",
+     "Revisão anatômica global da face - Vascularização",
+     "Revisão de anatomia global da face",
+     "Dissecando a artéria facial"
+    ]
+   },
+   {
+    "titulo": "⅓ inferior - Região mandibular",
+    "aulas": [
+     "Raciocínio Clínico Aplicado às Técnicas Tridimensionais",
+     "Região mandibular e parotídea",
+     "Região mandibular parte 2",
+     "Região do masseter",
+     "Aplicação para bruxismo",
+     "Preenchimento de mandíbula"
+    ]
+   },
+   {
+    "titulo": "⅓ inferior - Região mentual",
+    "aulas": [
+     "Técnica tridimensional de preenchimento de mento",
+     "Região mentoal",
+     "Região mentoniana"
+    ]
+   },
+   {
+    "titulo": "⅓ inferior - Região labial",
+    "aulas": [
+     "Descrição da região perioral com vascularização",
+     "Técnica de preenchimento do sulco lábio mentoniano",
+     "Técnica tridimensional de preenchimento de lábio em cadáver fresco e sua dissecção anatômica",
+     "Técnica anestésica de Napoli",
+     "Anatomia da arteria labial inferior pelo caminho reverso",
+     "Dissecção das artérias labiais inferior e superior",
+     "Região Perioral",
+     "Técnica de preenchimento labial com cânulas e agulhas",
+     "Comissura labial",
+     "Região perioral",
+     "Continuação região perioral"
+    ]
+   },
+   {
+    "titulo": "⅓ médio - Vascularização: transição artéria facial para angular",
+    "aulas": [
+     "Flap infraorbitario com descrição de técnica em fossa com cânula e agulha",
+     "Vascularização 1/3 médio a. Angular e facial"
+    ]
+   },
+   {
+    "titulo": "⅓ médio - Região nasal",
+    "aulas": [
+     "Flap 1 região nasal",
+     "Flap 2 região nasal com demonstração com cânula 22g",
+     "Flap nasal bilateral dissecção de artérias",
+     "Descrição das cartilagens nasais e ligamentos",
+     "Anatomia do nariz",
+     "Anatomia nasal parte 2",
+     "Rinomodelação: Agulha ou Cânula?",
+     "Anatomia da região nasal",
+     "Complexo nasoglabelar",
+     "Região nasal",
+     "Primeira camada do nariz",
+     "Técnica de preenchimento nasal com cânula",
+     "Técnica de aplicação com seringa BD",
+     "Musculo da região nasal",
+     "Aplicação da região nasal"
+    ]
+   },
+   {
+    "titulo": "⅓ médio - Região infraorbitária",
+    "aulas": [
+     "Descrição anatômica da técnica 3D olheiras",
+     "Região Infraorbitária",
+     "Abrindo a região infraorbitária"
+    ]
+   },
+   {
+    "titulo": "⅓ médio - Região periorbital",
+    "aulas": [
+     "Anatomia dos coxins gordurosos orbitais profundos",
+     "Anatomia Periorbital",
+     "Acolchoamento da região dos olhos",
+     "Região da pálpebra superior"
+    ]
+   },
+   {
+    "titulo": "⅓ médio",
+    "aulas": [
+     "Técnica tridimensional de preenchimento do sulco nasolabial",
+     "Dissecção orgânica: Retirando a pele",
+     "Cadáver em dissecção orgânica",
+     "Remoção da pele do terço médio",
+     "Como reperfundir agulha ou cânula",
+     "Estrutura da musculatura do 1/3 médio"
+    ]
+   },
+   {
+    "titulo": "⅓ médio superior - Mecanismo de ação da amaurose",
+    "aulas": [
+     "Conexão da artéria carótica interna e externa na região ocular",
+     "Anaurose no preenchimento"
+    ]
+   },
+   {
+    "titulo": "⅓ superior - Região glabelar",
+    "aulas": [
+     "Flap da Região da Glabela – Dissecção dos Músculos Corrugadores e Prócero",
+     "Riscos das regiões superorbitárias e da glabela"
+    ]
+   },
+   {
+    "titulo": "⅓ superior - Vascularização",
+    "aulas": [
+     "Segundo Flap da Região Frontal – Vascularização e Musculatura",
+     "Anatomia da região frontal com vascularização"
+    ]
+   },
+   {
+    "titulo": "⅓ superior - Região frontal",
+    "aulas": [
+     "Flap Inicial da Região Frontal e Técnicas de Aplicação de Toxina Botulínica",
+     "Flap Frontal com Dissecção de Artéria Supratroclear e Correlações Vasculares",
+     "Flap Frontal – Vascularização e Técnicas de Aplicação com Cânulas e Agulhas",
+     "Formação Especialista em Fios – Técnica Fox Eyes com Fio de Tração Reverso para Lifting de Sobrancelhas",
+     "Região Superciliar e frontal",
+     "Região frontal flap 1",
+     "Região frontal",
+     "Subcutâneo da região frontal",
+     "Região frontal parte 2",
+     "Região frontal parte 3"
+    ]
+   },
+   {
+    "titulo": "⅓ superior - Região temporal",
+    "aulas": [
+     "Técnica de Aplicação de Fios de Tração Reversa na Região Temporal",
+     "Revisão da Anatomia das Artérias Temporais Superficiais e suas Ramificações",
+     "Revisão de anatomia da região temporal superficial",
+     "Revisão da Anatomia das Artérias Temporais Superficiais",
+     "Região temporal com técnica de aplicação",
+     "Revisão das camadas da região temporal",
+     "Técnica superficial de preenchimento de têmporas",
+     "Avaliando camadas",
+     "Continuação das camadas da têmpora",
+     "Camadas da zona temporal",
+     "Região auriculotemporal",
+     "Camadas da região auriculotemporal",
+     "Camadas da região auriculotemporal parte 2",
+     "Camadas da região auriculotemporal parte 3",
+     "Aplicação na região temporal"
+    ]
+   },
+   {
+    "titulo": "⅓ superior - Região auricular: anatomia evascularização",
+    "aulas": [
+     "Anatomia da orelha"
+    ]
+   },
+   {
+    "titulo": "Anatomia e raciocínio clínico para técnicas de preenchimento",
+    "aulas": [
+     "Aula 159 - Raciocínio clínico para o preenchimento de supercílio",
+     "Aula 162 - Raciocínio clínico para o preenchimento de Crown Lifting",
+     "Raciocínio clínico para a região frontal",
+     "Raciocínio clínico para a região frontal - Anatomia",
+     "Raciocínio clínico para a região frontal - Intercorrências",
+     "Raciocínio clínico para a região da glabela",
+     "Raciocínio clínico para a região do supercílio",
+     "Raciocínio clínico para a região de têmporas - Anatomia",
+     "Raciocínio clínico para a região do couro cabeludo - Crown Lifting",
+     "Raciocínio clínico para a região do arco zigomático",
+     "Raciocínio clínico para a região infraorbitária",
+     "Raciocínio clínico para a região do nariz",
+     "Raciocínio clínico para a região do sulco nasolabial",
+     "Raciocínio clínico para a região da mandíbula",
+     "Raciocínio clínico para o lóbulo da orelha",
+     "Raciocínio clínico para a região do mento",
+     "Raciocínio clínico para a região da bochecha - ⅓ médio",
+     "Raciocínio clínico para a região dos lábios",
+     "Raciocínio clínico para a região do sulco labiomentoniano e pré jowl"
+    ]
+   },
+   {
+    "titulo": "Anatomia humana para procedimentos corporais",
+    "aulas": [
+     "Vascularização geral do corpo",
+     "Anatomia geral da região glútea",
+     "Anatomia dos ossos do quadril",
+     "Anatomia do subcutâneo do glúteo",
+     "Anatomia vascular da região glútea",
+     "Inervação do glúteo",
+     "Anatomia dos membros superiores",
+     "Revisão de anatomia da região da mama"
+    ]
+   }
+  ],
+  "CTX": [
+   {
+    "titulo": "Protocolo Glabela",
+    "aulas": [
+     "Introdução",
+     "Mecanismo de ação da toxina",
+     "Revisão de anatomia geral",
+     "Anatomia em cadáveres aplicada",
+     "Técnica de aplicação",
+     "Angulação e profundidade da agulha",
+     "Como segurar na agulha para aplicar",
+     "Reconstituição",
+     "Técnica e como evitar ptose palpebral",
+     "Intercorrências",
+     "Encerramento",
+     "Caso clinico em pele jovem",
+     "Caso clinico em pele madura"
+    ]
+   }
+  ],
+  "BIO": [
+   {
+    "titulo": "Comece por aqui",
+    "aulas": [
+     "Nossas diretrizes",
+     "Eu sou o João, e você?",
+     "Instruções sobre o certificado",
+     "Informações importantes",
+     "Raciocínio clinico para o uso dos bioestimuladores de colageno liquidos",
+     "Historia dos bioestimuladores líquidos de colágeno"
+    ]
+   },
+   {
+    "titulo": "Princípios da bioestimulação",
+    "aulas": [
+     "Introdução",
+     "Anatomia Aplicada aos Bioestimuladores",
+     "Envelhecimento Cutâneo",
+     "Função dos Bioestimuladores Injetáveis",
+     "Mecanismo de Ação dos Bioestimuladores",
+     "Reconstituições",
+     "Marcas Comerciais Disponíveis no Brasil",
+     "Segurança & Complicações"
+    ]
+   },
+   {
+    "titulo": "Hidroxiapatita de Cálcio",
+    "aulas": [
+     "Teórico",
+     "Pratica",
+     "Preparo da hidroxiapatita de cálcio",
+     "Preparo Kirialys"
+    ]
+   },
+   {
+    "titulo": "Casos clínicos PDLA",
+    "aulas": [
+     "Preparo Aesthefill",
+     "Paciente Modelo Aesthefill",
+     "Caso clínico Aesthefill em face GM",
+     "Caso clínico Aesthefill em face AR",
+     "Caso clínico Aesthefill em face + Reconstituição",
+     "Caso clínico Aesthefill em pescoço",
+     "Aesthefill na região periorbital"
+    ]
+   },
+   {
+    "titulo": "Casos clínicos PLLA",
+    "aulas": [
+     "Preparo do bioestimulador Elleva",
+     "Caso clínico de Elleva em face e pescoço",
+     "Como fazer a reconstitução do Sculptra",
+     "Caso clinico com Sculptra"
+    ]
+   },
+   {
+    "titulo": "Casos clínicos PCL",
+    "aulas": [
+     "Planejamento e aplicação de PCL",
+     "PCL Hiperdiluída em face",
+     "PCL Hiperdiluída no pescoço",
+     "Como fazer o preparo do Lafullen",
+     "Caso clinico com Lafullen",
+     "Como tratar nodulos causados por Ellansé"
+    ]
+   },
+   {
+    "titulo": "Casos clínicos CaOh - Hidróxiapatita de Cálcio",
+    "aulas": [
+     "Preparo Bioestimulador",
+     "Paciente Modelo Bioestimulador",
+     "Caso clínico de hidroxiapatita de cálcio",
+     "Caso clínico de hidroxiapatita de cálcio com 10 ml",
+     "Aplicação na parte posterior da face",
+     "Caso clínico de Radiesse Plus",
+     "Caso clínico de Radiesse Duo",
+     "Hidroxiapatita de Calcio em face para colar a pele",
+     "Caso clinico Bioplus",
+     "Caso clinico com Kirialys"
+    ]
+   },
+   {
+    "titulo": "Laser e tecnologias para estimulação de colágeno",
+    "aulas": [
+     "Hipro Inovação em Estetica Facial e Corporal",
+     "Aula 2 Camadas da face",
+     "Aula Pratica Facial",
+     "Aula de Hipro Pescoço e Papada",
+     "Aula de Hipro no Braço",
+     "Aula de Hipro Masculino com Cicatrizes de Acne",
+     "Aula de Hipro Abdomen",
+     "Aula de Hipro Abdomen Feminino",
+     "Aula de Hipro Interno da Coxa",
+     "Aula Hipro de Glúteo",
+     "Aula de Laser Acne",
+     "Aula de Hipro Cicatrizacne",
+     "Aula de Hipro mãe de Brian",
+     "Aplicação Prática HIPRO Parte 1",
+     "Aula de biostimulador colageno",
+     "Aula biostimulador colageno 1",
+     "Laser Lumière",
+     "Laser para Acne",
+     "Paciente Modelo hipro",
+     "Hipro-Cicatrizes de Acne",
+     "Dra Gabriela Matos e Brian - Aula de Hipro - Face - Aula 1",
+     "Dra Gabriela Matos e Brian - Aula de Hipro - Face - Aula 2",
+     "Aplicação Prática HIPRO Parte 1",
+     "Aplicação Prática HIPRO Parte 2",
+     "Bioestimulador de Colágeno Parte 1",
+     "Bioestimulador de Colágeno Parte 2",
+     "Laser Lumière",
+     "Laser para Acne",
+     "HIPRO em Cicatriz de Acne",
+     "Paciente Modelo HIPRO"
+    ]
+   },
+   {
+    "titulo": "Bioestimuladores para procedimentos corporais",
+    "aulas": [
+     "Tipos de produtos e suas indicações para glúteos",
+     "Técnicas de bioestimulação de colágeno em mãos",
+     "Caso clínico de bioestimulador de colágeno com 2 Elleva em glúteo (Parte 1)",
+     "Caso clínico de bioestimulador de colágeno com hidroxiapatita de cálcio em glúteos",
+     "Caso clínico de bioestimulador de colágeno com hidroxiapatita de cálcio em mãos",
+     "Caso clínico de bioestimulador com dois Elleva em glúteos",
+     "Caso clínico de bioestimulador de colágeno com hidroxiapatita de cálcio em mãos",
+     "Caso clínico de bioestimulador de colágeno com 2 Rennova Diamond em abdômen",
+     "Caso clínico de bioestimulador de colágeno com Biocomplex (PLLA + CaOH) na parte interna do braço",
+     "Bioestimulador de colágeno nos glúteos",
+     "Preenchimento e bioestimulador nos glúteos",
+     "Bioestimulador nos glúteos",
+     "Bioestimulador de colágeno no pescoço",
+     "Caso clínico de preenchimento com bioestimulador em glúteos com pmma",
+     "Bioestimulação no pescoço com hidroxiapatita de cálcio hiperdiluída",
+     "Hidroxiapatita de Calcio hipertiluída no cotovelo",
+     "Hidroxiapatita de Calcio em joelho"
+    ]
+   },
+   {
+    "titulo": "Fios de colágeno - Imersão Coreia",
+    "aulas": [
+     "Atualização de técnicas",
+     "Atualização de técnicas Coreia",
+     "Avaliação",
+     "Como comunicar os fios de tração",
+     "Técnica de fios de pdo reversa em têmporas",
+     "Lifting de sobrancelhas e ⅓ médio",
+     "Técnica de fios de pdo reversa em têmporas",
+     "Fios filler em pálpebra inferior",
+     "Fios de tração com técnica reversa",
+     "Técnica de fios de pdo reversa em têmporas",
+     "Fios agulhados na região cervical",
+     "[Live] Fios de tração reversos temporais",
+     "[Live] Fios espiculados na mandíbula e técnica reversa temporal",
+     "[Live] Fios de tração reversos para fox eyes",
+     "[Live] Fios de tração reversos para terço médio",
+     "Caso clínico de fios reversos completo - Fox yes e ⅓ médio",
+     "Caso clínico de fios reversos em têmporas"
+    ]
+   }
+  ]
+ },
+ "fora_do_plano": [
+  "Combo Vitalício — Módulos e Aulas › Suporte (4 itens)",
+  "Combo Vitalício — Módulos e Aulas › Elite Injectors Congress 2026 (2 itens)",
+  "FEP — Formação Especialista em Preenchimento › [FEP] Aulas Ao Vivo (3 itens)",
+  "FEP — Formação Especialista em Preenchimento › [FEP] Acesso ao grupo de alunos (1 itens)",
+  "FEP — Formação Especialista em Preenchimento › [FEP] Suporte Médico (1 itens)",
+  "FEP — Formação Especialista em Preenchimento › [FEP] Imersão Avançada em Rinomodelação (8 itens)",
+  "FEF — Formação Especialista em Fios › [FEF] Zoom — Atualização Científica (1 itens)",
+  "FEF — Formação Especialista em Fios › [FEF] Bônus — Imersão Coreia (17 itens)",
+  "IAPO › [IAPO] Link Ao Vivo - Imersão Avançada em Preenchimento de Olheiras (1 itens)",
+  "CAC › [CAC] Complicações isquêmicas tardias (vazio)",
+  "CAC › [CAC] Bônus - Professores convidados (3 itens)",
+  "IFF › [IFF] Dias 9 e 10 de fevereiro - Imersão Avançada em Full Face (2 itens)",
+  "EBOOK › [EBOOK] Comece por aqui (2 itens)",
+  "EBOOK › [EBOOK] Caso clínico de preenchimento tridimensional (3 itens)",
+  "IFF10+ › Bônus (6 itens)",
+  "IFF10+ › Pithon Napoli Experience (5 itens)",
+  "IFF10+ › Workshop Derma Dream (4 itens)",
+  "IFF10+ › Bioestimulador de colágeno (8 itens)",
+  "IFF10+ › Mini Curso Viver de Consultório (5 itens)",
+  "FEP — Conteúdos adicionais › [FEP] Harmonização Facial Masculina - Camilla Garritano (1 itens)",
+  "FEP — Conteúdos adicionais › [FEP] Marcelo Germani - Preenchimento full face: da reologia à técnica (10 itens)",
+  "FEP — Conteúdos adicionais › [FEP] Marcelo Germani - Preenchimento labial teoria (8 itens)",
+  "FEP — Conteúdos adicionais › [FEP] Marcelo Germani - Preenchimento labial pratica (22 itens)",
+  "FEP — Conteúdos adicionais › [FEP] Dra Vanessa Defelícibus - Intercorrências faciais (7 itens)",
+  "FEP — Conteúdos adicionais › [FEP] Larissa Leme - Caso clinico fullface masculino (12 itens)",
+  "FEP — Conteúdos adicionais › [FEP] Hipro - Dr. Brian (20 itens)",
+  "FEP — Conteúdos adicionais › [FEP] Harmonização Facial Masculina - Camilla Garritano (1 itens)",
+  "FEP — Conteúdos adicionais › [FEP] Intradermoterapia (8 itens)",
+  "FEP — Conteúdos adicionais › [FEP] Fios - Andressa Zorzi (2 itens)",
+  "Conteúdos complementares › Bônus - Região cervical (6 itens)",
+  "Conteúdos complementares › Bônus - Glândulas da face (2 itens)",
+  "Conteúdos complementares › Bônus - Região lingual e vascularização (1 itens)",
+  "Conteúdos complementares › Bônus - Inervação e anestesias da face (4 itens)",
+  "Conteúdos complementares › Bônus - Cadáver Experience (6 itens)",
+  "FEBio › [FEBio] Bônus - Fisiologia do envelhecimento (3 itens)",
+  "FEBio › [FEBio] Bônus - Vascularização da face em cadáveres frescos (10 itens)",
+  "FEBio › [FEBio] Bônus - Técnicas tridimensionais no cadáver fresco (5 itens)",
+  "FEBio › [FEBio] Bônus - Ultrassom dermatológico (8 itens)",
+  "FEBio › [FEBio] Bônus - Intradermoterapia (10 itens)",
+  "FEBio › [FEBio] Bônus - Skincare e homecare (9 itens)",
+  "FEBio › [FEBio] Bônus - Peelings (6 itens)"
+ ]
+}

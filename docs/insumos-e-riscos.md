@@ -4,7 +4,7 @@
 
 | # | Insumo | Por que bloqueia | Formato ideal |
 |---|---|---|---|
-| 1 | **Módulos e aulas das 16 trilhas** (títulos das 20 trilhas já recebidos) | Sem aulas, o plano usa blocos de estudo sobre uma carga provisória. Lista exata em `catalogo-proposta.md`, item 4 | Preencher a aba **Catálogo**, uma linha por aula |
+| 1 | **Duração e link das 1.013 aulas** (trilhas, módulos e aulas já recebidos) | Sem duração, o plano usa 20 min por aula. Lista exata em `catalogo-proposta.md`, item 4 | Preencher a aba **Catálogo**, uma linha por aula |
 | 2 | **Duração e link de cada aula** | Sem duração, o cronograma usa estimativas. Sem link, não aparece o botão "Acessar" | Colunas `duracao_min` e `link_aula` |
 | 3 | **Pré-requisitos e sequência pedagógica validados** | Definem a ordem do plano. Proposta e 7 decisões em aberto em `catalogo-proposta.md` | Colunas `prerequisitos` e `nivel`, mais decisão sobre a exceção para cursos em andamento (ver lógica, item 2.2) |
 | 4 | **Temas oficiais** | São as opções de escolha da etapa 2. Hoje são 9 temas propostos a partir dos títulos | Coluna `temas`. Recomendado: entre 5 e 8 temas, com nomes que o aluno reconheça |

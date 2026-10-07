@@ -3,11 +3,13 @@
 //
 // O QUE É REAL: títulos das trilhas.
 // O QUE É PROPOSTA (validar com a equipe): temas, nível, pré-requisitos e carga estimada.
-// O QUE FALTA: módulos, aulas, duração real e links de cada curso.
-//   Enquanto faltar, o plano usa "blocos de estudo" de 30 min sobre a carga estimada, sinalizada ao aluno como provisória.
+// MÓDULOS E AULAS: vêm de src/catalogo-aulas.json, gerado por src/importar_doc.py a partir do Google Doc da equipe.
+// O QUE FALTA: duração e link de cada aula. Sem duração, o plano usa a estimativa padrão por aula, sinalizada ao aluno.
+// Curso sem aulas no documento usa "blocos de estudo" sobre a carga estimada (provisória).
 //
 // tipo: "curso" entra na recomendação; "recurso" (suporte, bônus, ao vivo, ebook) não entra no cronograma.
-const VERSION = 'hotmart-2026-10-07-provisorio';
+const VERSION = 'doc-aulas-2026-10-07-provisorio';
+const AULAS = require('./catalogo-aulas.json').cursos;
 const T = {
   anat: 'Anatomia facial',
   tox: 'Toxina botulínica',
@@ -40,6 +42,7 @@ const CURSOS = [
 ];
 const RECURSOS = [
   ['EBOOK', '[Ebook] A Ciência e Arte do Preenchimento… (título completo a confirmar)', [T.areas]],
+  ['EXTRA', 'Conteúdos adicionais e bônus (convidados, workshops, Pithon Napoli Experience)', []],
   ['LIVE', 'Aulas Ao Vivo', []],
   ['BON', 'Bônus', []],
   ['SUP', 'Suporte Técnico', []],
@@ -49,11 +52,19 @@ const MEMBER_AREA = 'https://hotmart.com/pt-BR/club/combo-vitalicio/products/463
 function rows() {
   const base = { curso_descricao: '', objetivos: '', link_curso: '', modulo_id: '', modulo_titulo: '', modulo_ordem: '',
     aula_id: '', aula_titulo: '', aula_ordem: '', duracao_min: '', link_aula: '', materiais: '', ativo: 'sim' };
-  const out = CURSOS.map(([id, t, temas, nivel, pre, carga]) => Object.assign({}, base, {
-    curso_id: id, curso_titulo: t, temas: temas.join('; '), nivel, prerequisitos: pre.join('; '),
-    materiais: id === 'OLH' ? 'Ebook A Ciência e Arte do Preenchimento' : '',
-    tipo: 'curso', carga_estimada_h: carga, carga_fonte: 'provisória',
-  }));
+  const out = [];
+  CURSOS.forEach(([id, t, temas, nivel, pre, carga]) => {
+    const curso = Object.assign({}, base, {
+      curso_id: id, curso_titulo: t, temas: temas.join('; '), nivel, prerequisitos: pre.join('; '), tipo: 'curso',
+      materiais: id === 'OLH' ? 'Ebook A Ciência e Arte do Preenchimento (casos clínicos de olheiras)' : '',
+    });
+    const mods = AULAS[id] || [];
+    if (!mods.length) { out.push(Object.assign(curso, { carga_estimada_h: carga, carga_fonte: 'provisória' })); return; }
+    mods.forEach((m, mi) => m.aulas.forEach((a, ai) => out.push(Object.assign({}, curso, {
+      modulo_id: `${id}-M${mi + 1}`, modulo_titulo: m.titulo, modulo_ordem: mi + 1,
+      aula_id: `${id}-M${mi + 1}-A${ai + 1}`, aula_titulo: a, aula_ordem: ai + 1, carga_estimada_h: '', carga_fonte: '',
+    }))));
+  });
   RECURSOS.forEach(([id, t, temas]) => out.push(Object.assign({}, base, {
     curso_id: id, curso_titulo: t, temas: temas.join('; '), nivel: '', prerequisitos: '', tipo: 'recurso', carga_estimada_h: '', carga_fonte: '',
   })));

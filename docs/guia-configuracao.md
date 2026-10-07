@@ -6,7 +6,7 @@ Tempo estimado: 20 a 30 minutos. Quem faz: alguém da equipe com conta Google da
 1. No Google Drive: **Novo › Upload de arquivo** › `planilha/modelo-diagnostico-combo-vitalicio.xlsx`.
 2. Abra e use **Arquivo › Salvar como Planilhas Google**. Apague o .xlsx enviado.
 3. **Compartilhar**: só a equipe autorizada, como *Editor* ou *Leitor*. Nunca "Qualquer pessoa com o link". A planilha contém nome e e-mail dos alunos.
-4. A aba **Catálogo** já traz as 20 trilhas reais, sem aulas. Complete com módulos e aulas (uma linha por aula, ver `catalogo-proposta.md`) e atualize `versao_catalogo` na aba **Configuração**.
+4. A aba **Catálogo** já traz as trilhas e aulas reais. Complete `duracao_min` e `link_aula` (ver `catalogo-proposta.md`) e atualize `versao_catalogo` na aba **Configuração**.
 
 ## 2. Instalar o backend
 1. Na planilha: **Extensões › Apps Script**.
