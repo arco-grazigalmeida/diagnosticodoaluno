@@ -766,7 +766,8 @@
         h('li', null, 'Semana apertada? Faça só a parte de aula e deixe a atividade complementar para a revisão.'),
         h('li', null, 'Se sua disponibilidade ou seus objetivos mudarem, refaça o diagnóstico para gerar um plano novo. O histórico anterior fica guardado.')));
 
-    return h('section', { class: 'stack-lg' }, status, head, momento, startCard, seqSection, cron, evo, change, restartActions());
+    const disclaimer = h('p', { class: 'small muted' }, 'Este plano é educacional. Ele organiza seus estudos no Combo Vitalício e não certifica competência nem habilita a realizar procedimentos.');
+    return h('section', { class: 'stack-lg' }, status, head, momento, startCard, seqSection, cron, evo, change, disclaimer, restartActions());
   }
 
   function fact(v, l) { return h('div', { class: 'fact' }, h('b', null, v), h('span', null, l)); }
